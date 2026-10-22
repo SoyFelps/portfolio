@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felipe Parreiras - Calendário</title>
+  <link rel="icon" href="assets/img/img_00.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="index.html"><img src="assets/img/img_00.png" alt=""><span>Felipe Parreiras</span></a>
+  <button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="ai-workflows.html">AI Workflows</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="search-btn" aria-label="Search"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+  </nav>
+</header>
+
+<div class="search-panel" role="dialog" aria-label="Search">
+  <div class="search-box">
+    <input type="search" placeholder="Search this site" aria-label="Search this site">
+    <ul class="search-results"></ul>
+  </div>
+</div>
+
+<main class="page">
+
+  <div class="row" style="--rt:24px">
+    <a class="btn cell" href="index.html" style="--w:130px;--ml:0px">Back</a>
+    <h1 class="cell" style="--w:574px;--ml:32px;--mt:8px;--h:88px;font-size:64px;font-weight:700;color:rgb(255, 255, 255);text-align:center;font-family:Roboto,Arial,sans-serif;line-height:1.38">Calendar</h1>
+  </div>
+
+  <div class="row" style="--rt:120px">
+    <p class="cell c" style="--w:880px;--h:177px;font-size:21.3333px;color:rgb(227, 227, 227);line-height:1.208">The calendar below was created using elements from the Skote (Angular) framework, with adaptations to meet the needs of the workflow. It is a calendar designed for team planning and scheduling. Team leaders can see which employees will be unavailable on a specific date due to holidays, sick leave, absences, and other reasons. This allows them to better plan the scope and activities of the team.</p>
+  </div>
+
+  <div class="row" style="--rt:26px">
+    <p class="cell c" style="--w:880px;--h:59px;font-size:21.3333px;color:rgb(227, 227, 227);line-height:1.208">When hovering over an entry, a pop-up window displays information about the employee, as well as the date, time, and reason for the absence.</p>
+  </div>
+
+  <div class="row" style="--rt:64px">
+    <div class="cell" style="--w:283px;--ml:0px"><img src="assets/img/calendario-01.jpg" alt="" width="283" height="227" loading="lazy"></div>
+    <div class="cell" style="--w:283px;--ml:24px"><img src="assets/img/calendario-02.jpg" alt="" width="283" height="227" loading="lazy"></div>
+    <div class="cell" style="--w:283px;--ml:23px"><img src="assets/img/calendario-03.jpg" alt="" width="283" height="227" loading="lazy"></div>
+  </div>
+
+  <div class="row" style="--rt:56px">
+    <p class="cell c" style="--w:880px;--h:96px;font-size:21.3333px;color:rgb(227, 227, 227);line-height:1.313">Other viewing options are also available. You can switch between weekly and daily views, allowing you to see the start times of absences. These options are useful for planning on a smaller or more specific scale.</p>
+  </div>
+
+  <div class="row" style="--rt:56px">
+    <div class="cell" style="--w:437px;--ml:0px"><img src="assets/img/calendario-04.jpg" alt="" width="437" height="246" loading="lazy"></div>
+    <div class="cell" style="--w:437px;--ml:23px"><img src="assets/img/calendario-05.jpg" alt="" width="437" height="246" loading="lazy"></div>
+  </div>
+
+  <div class="row" style="--rt:55px">
+    <p class="cell c" style="--w:880px;--h:32px;font-size:21.3333px;line-height:1.313">Click <a href="https://www.figma.com/proto/Ros0NBC9pwEjEL0ICml9Ib/Untitled?page-id=0%3A1&type=design&node-id=1-10296&viewport=739%2C145%2C0.08&t=ZLNGGnV6bhjFb63y-1&scaling=scale-down&starting-point-node-id=1%3A10296&mode=design" target="_blank" rel="noopener"><span style="color:rgb(83, 180, 117)">here</span></a> to navigate the Figma prototype.</p>
+  </div>
+
+  <div class="row" style="--rt:64px">
+    <p class="cell c" style="--w:880px;--h:160px;font-size:21.3333px;color:rgb(227, 227, 227);line-height:1.313">The mobile version follows the same core concept, but due to the smaller screen size, the monthly view only indicates which days contain entries without displaying their details. Users need to tap the desired day to view the information associated with each entry. Another option for viewing entries, similar to the desktop version, is the weekly view.</p>
+  </div>
+
+  <div class="row" style="--rt:56px">
+    <div class="cell" style="--w:130px;--ml:0px"><img src="assets/img/calendario-06.jpg" alt="" width="130" height="289" loading="lazy"></div>
+    <div class="cell" style="--w:130px;--ml:24px"><img src="assets/img/calendario-07.jpg" alt="" width="130" height="289" loading="lazy"></div>
+    <div class="cell" style="--w:130px;--ml:23px"><img src="assets/img/calendario-08.jpg" alt="" width="130" height="289" loading="lazy"></div>
+    <div class="cell" style="--w:130px;--ml:23px"><img src="assets/img/calendario-09.jpg" alt="" width="130" height="289" loading="lazy"></div>
+    <div class="cell" style="--w:130px;--ml:23px"><img src="assets/img/calendario-10.jpg" alt="" width="130" height="289" loading="lazy"></div>
+    <div class="cell" style="--w:130px;--ml:23px"><img src="assets/img/calendario-11.jpg" alt="" width="130" height="289" loading="lazy"></div>
+  </div>
+
+  <div class="page-end" style="--h:57px"></div>
+</main>
+
+<footer class="site-footer tight">Contact: fgparreiras@gmail.com</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
