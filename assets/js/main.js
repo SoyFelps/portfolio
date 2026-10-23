@@ -106,3 +106,24 @@ if (wall) {
     wall.classList.add('in');
   }
 }
+
+// Copy-to-clipboard buttons (Contact page)
+document.querySelectorAll('[data-copy]').forEach((btn) => {
+  const label = btn.querySelector('[data-copy-label]');
+  const status = document.querySelector('[data-copy-status]');
+  btn.addEventListener('click', async () => {
+    const text = btn.getAttribute('data-copy');
+    let ok = false;
+    try { await navigator.clipboard.writeText(text); ok = true; } catch (e) {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+      ta.remove();
+    }
+    if (label) label.textContent = ok ? 'Copied' : 'Copy failed';
+    btn.classList.toggle('is-copied', ok);
+    if (status) status.textContent = ok ? 'E-mail address copied to the clipboard' : 'Could not copy the address';
+    setTimeout(() => { if (label) label.textContent = 'Copy'; btn.classList.remove('is-copied'); }, 2000);
+  });
+});
