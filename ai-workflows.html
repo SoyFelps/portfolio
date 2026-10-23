@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/xipptech.css">
 </head>
 <body>
 
@@ -49,125 +50,162 @@
   </div>
 </div>
 
-<main class="page" id="main">
+<main class="xt" id="main">
 
-  <div class="row" style="--rt:24px">
-    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(229.44 * var(--u))"><img src="assets/img/ai-workflows-01.webp" alt="AI Workflows — preview 1" width="562" height="94" loading="lazy"></div>
-    <a class="btn btn-back cell" href="index.html" style="--w:calc(130.44 * var(--u));--ml:calc(-666.18 * var(--u));--mt:28px"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
-  </div>
+  <!-- ===== Hero ===== -->
+  <section class="xt-hero" aria-labelledby="xt-title">
+    <div class="xt-hero-copy">
+      <a class="btn btn-back" href="index.html"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
+      <h1 id="xt-title">AI Workflows</h1>
+      <p class="xt-lead">Using AI in design workflows is now part of reality. Using AI to brainstorm and prototype is not only possible, but increasingly expected of Product Designers today.</p>
+      <ul class="xt-jump" aria-label="Jump to a prototype">
+        <li><a href="#design-system">Design System</a></li>
+        <li><a href="#pathway">Pathway</a></li>
+        <li><a href="#marcaflow">MarcaFlow</a></li>
+      </ul>
+    </div>
+    <div class="xt-hero-art reveal">
+      <img src="assets/img/ai-workflows-02.webp" alt="Interactive design system on a laptop" width="1280" height="764">
+    </div>
+  </section>
 
-  <div class="row" style="--rt:56px">
-    <h1 class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;text-align:center;line-height:normal;position:relative;top:5px">AI Workflows</h1>
-  </div>
+  <dl class="xt-facts reveal">
+    <div><dt>Prototypes</dt><dd>Design System, Pathway and MarcaFlow</dd></div>
+    <div><dt>Built with</dt><dd>Claude Code and Manus</dd></div>
+    <div><dt>Design input</dt><dd>Figma MCP</dd></div>
+    <div><dt>Published on</dt><dd>GitHub</dd></div>
+  </dl>
 
-  <div class="row">
-    <nav class="toc cell c" style="--w:calc(896 * var(--u))" aria-label="On this page"><span>On this page</span><a href="#design-system">Design System</a><a href="#pathway">Pathway</a><a href="#marcaflow">MarcaFlow</a></nav>
-  </div>
+  <!-- ===== Approaches ===== -->
+  <section class="xt-section" id="approaches" aria-labelledby="approaches-title">
+    <header class="xt-head">
+      <p class="xt-kicker">01 · Approaches</p>
+      <h2 id="approaches-title">Two common approaches</h2>
+    </header>
 
-  <div class="row" style="--rt:64px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:84px;text-align:center">Using AI in design workflows is now part of reality. Using AI to brainstorm and prototype is not only possible, but increasingly expected of Product Designers today. There are two possible approaches: 1- design and prototype directly with AI, or 2- Use Figma MCP to maintain manual control over the design.</p>
-  </div>
+    <div class="xt-cards xt-cards-2">
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.5 3.5l1.55 4.45a3 3 0 0 0 1.9 1.9l4.45 1.55-4.45 1.55a3 3 0 0 0-1.9 1.9L9.5 18.8 7.95 14.35a3 3 0 0 0-1.9-1.9L1.6 10.9l4.45-1.55a3 3 0 0 0 1.9-1.9L9.5 3.5zM18.5 2l.75 2.25a1.6 1.6 0 0 0 1 1L22.5 6l-2.25.75a1.6 1.6 0 0 0-1 1L18.5 10l-.75-2.25a1.6 1.6 0 0 0-1-1L14.5 6l2.25-.75a1.6 1.6 0 0 0 1-1L18.5 2zM18 14l.6 1.8a1.3 1.3 0 0 0 .8.8L21.2 17.2l-1.8.6a1.3 1.3 0 0 0-.8.8L18 20.4l-.6-1.8a1.3 1.3 0 0 0-.8-.8l-1.8-.6 1.8-.6a1.3 1.3 0 0 0 .8-.8L18 14z"/></svg></span>
+        <h3>Direct with AI</h3>
+        <p>Design and prototype directly with AI.</p>
+      </article>
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2" fill="currentColor" stroke="none"/><circle cx="4.5" cy="5.5" r="2"/><circle cx="19.5" cy="5.5" r="2"/><circle cx="12" cy="20" r="2"/><path d="M6 7l4.3 3.3M18 7l-4.3 3.3M12 15.2V18"/></svg></span>
+        <h3>Figma MCP</h3>
+        <p>Use Figma MCP to maintain manual control over the design.</p>
+      </article>
+    </div>
 
-  <div class="row" style="--rt:64px">
-    <h2 id="design-system" class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">Design System</h2>
-  </div>
+    <figure class="xt-figure xt-tools-strip reveal">
+      <img src="assets/img/ai-workflows-01.webp" alt="Claude Code, Figma, Manus and GitHub" width="1200" height="200" loading="lazy">
+    </figure>
+  </section>
 
-  <div class="row" style="--rt:56px">
-    <div class="cell reveal" style="--w:calc(513.22 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/ai-workflows-02.webp" alt="AI Workflows — preview 2" width="661" height="395" loading="lazy"></div>
-    <p class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:112px">Using <span style="color:rgb(246, 178, 107)">Claude Code</span> we can easily create an interactive Design System with tokens, HTML, CSS and an entire JSON file ready to be copied by the dev team and used in real products.</p>
-    <p class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(-347.84 * var(--u));--mt:142px;--h:112px">This one was created from a product that is already live. Now this design can be reused effortlessly in new features or in different products of the same company.</p>
-    <a class="btn btn-primary cell" href="https://soyfelps.github.io/frontcore_ds/" target="_blank" rel="noopener" style="--w:calc(360.26 * var(--u));--ml:calc(-354.05 * var(--u));--mt:268px">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-  </div>
+  <!-- ===== Prototypes ===== -->
+  <section class="xt-section" id="prototypes" aria-labelledby="prototypes-title">
+    <header class="xt-head">
+      <p class="xt-kicker">02 · Prototypes</p>
+      <h2 id="prototypes-title">Prototypes I built with AI</h2>
+    </header>
 
-  <div class="row" style="--rt:135px">
-    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/ai-workflows-03.webp" alt="AI Workflows — preview 3" width="464" height="349" loading="lazy"></div>
-    <p class="cell" style="--w:calc(351.72 * var(--u));--ml:calc(-739.16 * var(--u));--mt:8px;--h:196px">Having a live design system helps not only the tech team, but also POs and Stakeholders because they can navigate the DS just like any other website and use the information in specification pages. It can also be used to show new employees the company visual identity during the onboarding.</p>
-  </div>
+    <!-- I · Design System -->
+    <div class="xt-work">
+      <article class="xt-product">
+        <figure class="xt-shot xt-shot-wide reveal">
+          <img src="assets/img/ai-workflows-05.webp" alt="Design System overview page" width="853" height="480" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p class="xt-num">I <span class="xt-tag">Claude Code</span></p>
+          <h3 id="design-system">Design System</h3>
+          <p class="xt-btnrow"><a class="btn btn-primary" href="https://soyfelps.github.io/frontcore_ds/" target="_blank" rel="noopener">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></p>
+          <p>Using <span class="c-claude">Claude Code</span> we can easily create an interactive Design System with tokens, HTML, CSS and an entire JSON file ready to be copied by the dev team and used in real products.</p>
+          <p>This one was created from a product that is already live. Now this design can be reused effortlessly in new features or in different products of the same company.</p>
+        </div>
+      </article>
+      <div class="xt-detail xt-flip">
+        <figure class="xt-shot reveal"><img src="assets/img/ai-workflows-03.webp" alt="Design system navigated like a website" width="1280" height="964" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>Having a live design system helps not only the tech team, but also POs and Stakeholders because they can navigate the DS just like any other website and use the information in specification pages. It can also be used to show new employees the company visual identity during the onboarding.</p>
+        </div>
+      </div>
+      <div class="xt-detail">
+        <figure class="xt-shot reveal"><img src="assets/img/ai-workflows-04.webp" alt="Component code ready to copy" width="1280" height="964" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>Developers can easily copy the components’ HTML and CSS, as well as entire JSON files, such as the colours.</p>
+          <p>This approach speeds up the development process.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="row" style="--rt:137px">
-    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/ai-workflows-04.webp" alt="AI Workflows — preview 4" width="464" height="349" loading="lazy"></div>
-    <p class="cell" style="--w:calc(351.72 * var(--u));--ml:calc(27.18 * var(--u));--mt:8px;--h:84px">Developers can easily copy the components’ HTML and CSS, as well as entire JSON files, such as the colours.</p>
-    <p class="cell" style="--w:calc(351.72 * var(--u));--ml:calc(-351.72 * var(--u));--mt:108px;--h:56px">This approach speeds up the development process.</p>
-  </div>
+    <!-- II · Pathway -->
+    <div class="xt-work">
+      <article class="xt-product xt-flip">
+        <figure class="xt-shot xt-shot-wide reveal">
+          <img src="assets/img/ai-workflows-06.webp" alt="Pathway flow builder and candidate form" width="1280" height="728" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p class="xt-num">II <span class="xt-tag">Claude Code</span><span class="xt-tag">Figma MCP</span><span class="xt-tag">GitHub</span></p>
+          <h3 id="pathway">Pathway</h3>
+          <p class="xt-btnrow"><a class="btn btn-primary" href="https://soyfelps.github.io/pathway2/" target="_blank" rel="noopener">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></p>
+          <p>Pathway is a prototype for designing thoughtful job application experiences. It gives hiring teams a visual flow builder where they can create roles, arrange application steps, connect those steps into journeys, and define how candidates move through the process. The prototype includes seeded examples such as Senior Product Designer and Senior Full-Stack Engineer, as well as the ability to create new flows from scratch.</p>
+        </div>
+      </article>
+      <div class="xt-detail">
+        <figure class="xt-shot reveal"><img src="assets/img/ai-workflows-07.webp" alt="Pathway flow builder" width="1280" height="610" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>The builder supports several types of steps: candidate information, short-answer questions, single-choice questions with branching paths, multi-choice questions, and ending screens. Hiring teams can configure the company, job title, description, optional candidate fields, question text, answer options, and completion outcomes. The flow can then be previewed from the candidate’s perspective or published as a shareable application link.</p>
+        </div>
+      </div>
+      <div class="xt-detail xt-flip">
+        <figure class="xt-shot reveal"><img src="assets/img/ai-workflows-17.webp" alt="Pathway: previewing the application as a candidate" width="1280" height="612" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>From the candidate’s perspective, Pathway presents a clear, welcoming application form that begins with essential information such as name, email, and resume, etc. Depending on the role’s configuration, candidates may answer open-ended questions, select from options, or follow different paths based on their responses, with progress and completion states designed to make the process feel focused.</p>
+        </div>
+      </div>
+      <div class="xt-detail">
+        <figure class="xt-shot reveal"><img src="assets/img/ai-workflows-09.webp" alt="Pathway built with AI on a laptop" width="1280" height="663" loading="lazy"></figure>
+        <div class="xt-copy">
+          <h4 class="xt-sub">Using AI to code it</h4>
+          <p>I created Pathway through an AI-assisted process using <span class="c-claude">Claude Code</span>. I used GitHub as the project repository and publishing platform, while iterating through the product concept, flow builder, and candidate experience conversationally.</p>
+          <p>I also used the <span class="c-figma">Figma MCP</span> with Claude Code to share the intended design system, typography, colours, and wireframe concepts. This helped Claude translate the visual direction into a functional, responsive prototype.</p>
+          <img class="xt-inline-logos" src="assets/img/ai-workflows-10.webp" alt="Claude Code, Manus and Figma" width="700" height="200" loading="lazy">
+        </div>
+      </div>
+      <figure class="xt-shot xt-shot-full reveal"><img src="assets/img/ai-workflows-11.webp" alt="Pathway: adding a step to the journey" width="1280" height="720" loading="lazy"></figure>
+    </div>
 
-  <div class="row" style="--rt:136px">
-    <div class="cell reveal" style="--w:calc(590.09 * var(--u));--ml:calc(76.48 * var(--u))"><img src="assets/img/ai-workflows-05.webp" alt="AI Workflows — preview 5" width="760" height="428" loading="lazy"></div>
-    <a class="btn btn-primary cell" href="https://soyfelps.github.io/frontcore_ds/" target="_blank" rel="noopener" style="--w:calc(130.44 * var(--u));--ml:calc(22.52 * var(--u))">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-  </div>
+    <!-- III · MarcaFlow -->
+    <div class="xt-work">
+      <article class="xt-product">
+        <figure class="xt-shot xt-shot-wide reveal">
+          <img src="assets/img/ai-workflows-12.webp" alt="MarcaFlow trademark pipeline on a laptop" width="1280" height="686" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p class="xt-num">III <span class="xt-tag">Manus</span><span class="xt-tag">GitHub</span></p>
+          <h3 id="marcaflow">MarcaFlow</h3>
+          <p class="xt-btnrow"><a class="btn btn-primary" href="https://soyfelps.github.io/marcaflow/index.html" target="_blank" rel="noopener">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></p>
+          <p>MarcaFlow is a live prototype for managing trademarks, centralizing leads, clients, documents, and process stages in one place. It includes a Kanban pipeline, Leads screen with table or Kanban views, filters, checklists, Google Drive links, reports, performance indicators, and record movement between process stages.</p>
+        </div>
+      </article>
+      <div class="xt-detail xt-flip">
+        <figure class="xt-shot xt-shot-tall reveal"><img src="assets/img/ai-workflows-13.webp" alt="MarcaFlow on a tilted laptop" width="688" height="825" loading="lazy"></figure>
+        <div class="xt-copy">
+          <h4 class="xt-sub">How was it created?</h4>
+          <p>MarcaFlow was created 100% through an AI-assisted coding process. For this specific project I used <span class="c-manus">Manus</span>. I described the desired workflows—such as the Pipeline, Leads, Non-Protocolled Clients, Overview, and Reports screens—and the AI translated those ideas into interface components, data structures, navigation, filters, checklists, Kanban interactions, local storage behaviour, and responsive layouts. Features were built gradually, tested in the browser, adjusted based on visual feedback, and refined through short development cycles.</p>
+        </div>
+      </div>
+      <div class="xt-detail">
+        <figure class="xt-shot reveal"><img src="assets/img/ai-workflows-15.webp" alt="MarcaFlow repository on GitHub" width="1234" height="797" loading="lazy"></figure>
+        <div class="xt-copy">
+          <h4 class="xt-sub xt-sub-icon"><img src="assets/img/ai-workflows-14.webp" alt="" width="512" height="512" loading="lazy">How I used Github for this project</h4>
+          <p>GitHub served as the project’s central code repository and collaboration layer. Through the GitHub connector, the AI could inspect the existing files, understand the project structure, update multiple pages consistently, create assets such as the MarcaFlow SVG logo, commit changes, push them to the repository, and verify the published files. I remained responsible for defining priorities and reviewing the results, while the AI handled implementation, testing, debugging, and synchronization across the application. This combination of user direction, AI-generated code, browser validation, and GitHub version control made it possible to evolve MarcaFlow quickly as a functional prototype.</p>
+        </div>
+      </div>
+      <figure class="xt-shot xt-shot-full reveal"><img src="assets/img/ai-workflows-16.webp" alt="MarcaFlow trademark pipeline screen" width="960" height="540" loading="lazy"></figure>
+    </div>
+  </section>
 
-  <div class="row" style="--rt:121px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
-
-  <div class="row" style="--rt:128px">
-    <h2 id="pathway" class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">Pathway</h2>
-  </div>
-
-  <div class="row" style="--rt:56px">
-    <div class="cell reveal" style="--w:calc(513.22 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/ai-workflows-06.webp" alt="AI Workflows — preview 6" width="661" height="376" loading="lazy"></div>
-    <p class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:280px">Pathway is a prototype for designing thoughtful job application experiences. It gives hiring teams a visual flow builder where they can create roles, arrange application steps, connect those steps into journeys, and define how candidates move through the process. The prototype includes seeded examples such as Senior Product Designer and Senior Full-Stack Engineer, as well as the ability to create new flows from scratch.</p>
-    <a class="btn btn-primary cell" href="https://soyfelps.github.io/pathway2/" target="_blank" rel="noopener" style="--w:calc(360.26 * var(--u));--ml:calc(-354.05 * var(--u));--mt:308px">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-  </div>
-
-  <div class="row" style="--rt:136px">
-    <div class="cell reveal" style="--w:calc(513.22 * var(--u));--ml:calc(383.17 * var(--u))"><img src="assets/img/ai-workflows-07.webp" alt="AI Workflows — preview 7" width="661" height="315" loading="lazy"></div>
-    <p class="cell" style="--w:calc(351.72 * var(--u));--ml:calc(-892.12 * var(--u));--mt:8px;--h:280px">The builder supports several types of steps: candidate information, short-answer questions, single-choice questions with branching paths, multi-choice questions, and ending screens. Hiring teams can configure the company, job title, description, optional candidate fields, question text, answer options, and completion outcomes. The flow can then be previewed from the candidate’s perspective or published as a shareable application link.</p>
-  </div>
-
-  <div class="row" style="--rt:136px">
-    <div class="cell reveal" style="--w:calc(590.09 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/ai-workflows-08.webp" alt="AI Workflows — preview 8" width="760" height="363" loading="lazy"></div>
-    <p class="cell" style="--w:calc(278.74 * var(--u));--ml:calc(25.62 * var(--u));--mt:8px;--h:336px">From the candidate’s perspective, Pathway presents a clear, welcoming application form that begins with essential information such as name, email, and resume, etc. Depending on the role’s configuration, candidates may answer open-ended questions, select from options, or follow different paths based on their responses, with progress and completion states designed to make the process feel focused.</p>
-  </div>
-
-  <div class="row" style="--rt:136px">
-    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/ai-workflows-09.webp" alt="AI Workflows — preview 9" width="464" height="240" loading="lazy"></div>
-    <h3 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:36px;font-size:24px;font-weight:700;position:relative;top:4px;line-height:1.167">Using AI to code it:</h3>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:78px;--h:112px">I created Pathway through an AI-assisted process using <span style="color:rgb(246, 178, 107)">Claude Code</span>. I used GitHub as the project repository and publishing platform, while iterating through the product concept, flow builder, and candidate experience conversationally.</p>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:206px;--h:112px">I also used the <span style="color:rgb(234, 153, 153)">Figma MCP</span> with Claude Code to share the intended design system, typography, colours, and wireframe concepts. This helped Claude translate the visual direction into a functional, responsive prototype.</p>
-  </div>
-
-  <div class="row" style="--rt:62px">
-    <div class="cell c reveal" style="--w:calc(130.44 * var(--u))"><img src="assets/img/ai-workflows-10.webp" alt="AI Workflows — preview 10" width="168" height="48" loading="lazy"></div>
-  </div>
-
-  <div class="row" style="--rt:48px">
-    <div class="cell reveal" style="--w:calc(590.09 * var(--u));--ml:calc(76.48 * var(--u))"><img src="assets/img/ai-workflows-11.webp" alt="AI Workflows — preview 11" width="760" height="427" loading="lazy"></div>
-    <a class="btn btn-primary cell" href="https://soyfelps.github.io/pathway2/" target="_blank" rel="noopener" style="--w:calc(130.44 * var(--u));--ml:calc(22.52 * var(--u))">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-  </div>
-
-  <div class="row" style="--rt:121px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
-
-  <div class="row" style="--rt:128px">
-    <h2 id="marcaflow" class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">MarcaFlow</h2>
-  </div>
-
-  <div class="row" style="--rt:56px">
-    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(459.26 * var(--u))"><img src="assets/img/ai-workflows-12.webp" alt="AI Workflows — preview 12" width="562" height="301" loading="lazy"></div>
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-889.79 * var(--u));--mt:14px;--h:168px">MarcaFlow is a live prototype for managing trademarks, centralizing leads, clients, documents, and process stages in one place. It includes a Kanban pipeline, Leads screen with table or Kanban views, filters, checklists, Google Drive links, reports, performance indicators, and record movement between process stages.</p>
-    <a class="btn btn-primary cell" href="https://soyfelps.github.io/marcaflow/index.html" target="_blank" rel="noopener" style="--w:calc(436.35 * var(--u));--ml:calc(-430.14 * var(--u));--mt:196px">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-  </div>
-
-  <div class="row" style="--rt:49px">
-    <div class="cell reveal" style="--w:calc(206.53 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/ai-workflows-13.webp" alt="AI Workflows — preview 13" width="266" height="319" loading="lazy"></div>
-    <h3 class="cell" style="--w:calc(653.75 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:36px;font-size:24px;font-weight:700;position:relative;top:4px;line-height:1.167">How was it created?</h3>
-    <p class="cell" style="--w:calc(653.75 * var(--u));--ml:calc(-653.75 * var(--u));--mt:78px;--h:196px">MarcaFlow was created 100% through an AI-assisted coding process. For this specific project I used <span style="color:rgb(164, 194, 244)">Manus</span>. I described the desired workflows—such as the Pipeline, Leads, Non-Protocolled Clients, Overview, and Reports screens—and the AI translated those ideas into interface components, data structures, navigation, filters, checklists, Kanban interactions, local storage behaviour, and responsive layouts. Features were built gradually, tested in the browser, adjusted based on visual feedback, and refined through short development cycles.</p>
-  </div>
-
-  <div class="row" style="--rt:136px">
-    <div class="cell reveal" style="--w:calc(53.57 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/ai-workflows-14.webp" alt="AI Workflows — preview 14" width="69" height="69" loading="lazy"></div>
-    <h3 class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:36px;font-size:24px;font-weight:700;position:relative;top:4px;line-height:1.167">How I used Github for this project:</h3>
-    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(29.5 * var(--u));--mt:40px"><img src="assets/img/ai-workflows-15.webp" alt="AI Workflows — preview 15" width="464" height="300" loading="lazy"></div>
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-813.7 * var(--u));--mt:78px;--h:364px">GitHub served as the project’s central code repository and collaboration layer. Through the GitHub connector, the AI could inspect the existing files, understand the project structure, update multiple pages consistently, create assets such as the MarcaFlow SVG logo, commit changes, push them to the repository, and verify the published files. I remained responsible for defining priorities and reviewing the results, while the AI handled implementation, testing, debugging, and synchronization across the application. This combination of user direction, AI-generated code, browser validation, and GitHub version control made it possible to evolve MarcaFlow quickly as a functional prototype.</p>
-  </div>
-
-  <div class="row" style="--rt:150px">
-    <div class="cell reveal" style="--w:calc(666.18 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/ai-workflows-16.webp" alt="AI Workflows — preview 16" width="858" height="483" loading="lazy"></div>
-    <a class="btn btn-primary cell" href="https://soyfelps.github.io/marcaflow/index.html" target="_blank" rel="noopener" style="--w:calc(130.44 * var(--u));--ml:calc(23.29 * var(--u))">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-  </div>
-
-  <div class="page-end" style="--h:57px"></div>
+  <div class="xt-end"></div>
 </main>
 
 <footer class="site-footer">

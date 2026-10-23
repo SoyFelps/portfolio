@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/xipptech.css">
 </head>
 <body>
 
@@ -49,124 +50,192 @@
   </div>
 </div>
 
-<main class="page" id="main">
+<main class="xt" id="main">
 
-  <div class="row" style="--rt:24px">
-    <div class="cell reveal" style="--w:calc(130.44 * var(--u));--ml:calc(383.17 * var(--u))"><img src="assets/img/meurh360-01.webp" alt="MeuRH360 — preview 1" width="168" height="175" loading="lazy"></div>
-    <a class="btn btn-back cell" href="index.html" style="--w:calc(130.44 * var(--u));--ml:calc(-514 * var(--u));--mt:40px"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
-  </div>
+  <!-- ===== Hero ===== -->
+  <section class="xt-hero" aria-labelledby="xt-title">
+    <div class="xt-hero-copy">
+      <a class="btn btn-back" href="index.html"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
+      <p class="xt-eyebrow">Real Products, not Just Studies.</p>
+      <h1 id="xt-title">MeuRH360</h1>
+      <p class="xt-lead">MeuRH360 (MyHR360) is a complete human resources management platform.</p>
+      <ul class="xt-jump" aria-label="Jump to a section">
+        <li><a href="#company">The company</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#clients">Clients</a></li>
+      </ul>
+    </div>
+    <div class="xt-hero-art reveal">
+      <img src="assets/img/meurh360-02.webp" alt="MeuRH360 platform on a laptop" width="1280" height="774">
+    </div>
+  </section>
 
-  <div class="row" style="--rt:144px">
-    <h1 class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">MeuRH360 (MyHR360)</h1>
-  </div>
+  <dl class="xt-facts reveal">
+    <div><dt>Company</dt><dd>MeuRH360</dd></div>
+    <div><dt>Product</dt><dd>HR management platform</dd></div>
+    <div><dt>My role</dt><dd>UX Lead and Product Manager</dd></div>
+    <div><dt>Clients</dt><dd>Bradesco Saúde, MetLife, Coritiba FC, Grupo Souza Lima, Amil and CSD</dd></div>
+  </dl>
 
-  <div class="row">
-    <nav class="toc cell c" style="--w:calc(896 * var(--u))" aria-label="On this page"><span>On this page</span><a href="#development-management">Development Management</a><a href="#candidate-portal">Candidate Portal</a><a href="#holidays-optional-holidays">Holidays &amp; Optional Holidays</a><a href="#white-label">White Label</a></nav>
-  </div>
+  <!-- ===== The company ===== -->
+  <section class="xt-section" id="company" aria-labelledby="company-title">
+    <header class="xt-head">
+      <p class="xt-kicker">01 · The company</p>
+      <h2 id="company-title">MeuRH360 as a company</h2>
+    </header>
 
-  <div class="row" style="--rt:56px">
-    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(459.26 * var(--u))"><img src="assets/img/meurh360-02.webp" alt="MeuRH360 — preview 2" width="562" height="340" loading="lazy"></div>
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-889.79 * var(--u));--mt:8px;--h:56px">MeuRH360 is a complete human resources management platform.</p>
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-423.93 * var(--u));--mt:80px;--h:84px">We work directly with clients and prospects to understand their individual needs, as well as broader market demands.</p>
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-423.93 * var(--u));--mt:180px;--h:84px">We leverage our expertise to create efficient and often innovative solutions, always aiming to meet our users’ expectations.</p>
-  </div>
+    <div class="xt-cards xt-cards-2">
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3zM8 11a3 3 0 1 0-3-3 3 3 0 0 0 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05A4.2 4.2 0 0 1 17 16.5V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></span>
+        <h3>Close to clients</h3>
+        <p>We work directly with clients and prospects to understand their individual needs, as well as broader market demands.</p>
+      </article>
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19a7 7 0 0 0-4 12.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26A7 7 0 0 0 12 2z"/></svg></span>
+        <h3>Efficient solutions</h3>
+        <p>We leverage our expertise to create efficient and often innovative solutions, always aiming to meet our users’ expectations.</p>
+      </article>
+    </div>
 
-  <div class="row" style="--rt:56px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:112px">I joined the company in June 2023 as a Mid-Level UX Designer and, over time, became UX Lead and Product Manager. Since then, through constant communication with clients and market research, I have led the creation of workflows such as Development Management, Goal Setting, Digital Time Tracking, Candidate Portal, Work Schedule and Shift Settings, among many others.</p>
-  </div>
+    <div class="xt-role reveal">
+      <div class="xt-role-copy">
+        <p class="xt-mini">My role</p>
+        <p>I joined the company in June 2023 as a Mid-Level UX Designer and, over time, became UX Lead and Product Manager. Since then, through constant communication with clients and market research, I have led the creation of workflows such as Development Management, Goal Setting, Digital Time Tracking, Candidate Portal, Work Schedule and Shift Settings, among many others.</p>
+      </div>
+      <div class="xt-stats">
+        <p class="xt-mini">After I joined the company</p>
+        <ul>
+          <li><strong>125%</strong><span>increase in the number of workflows developed</span></li>
+          <li><strong>100%</strong><span>increase in the number of research studies conducted</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <div class="row" style="--rt:64px">
-    <h3 class="cell c" style="--w:calc(883.58 * var(--u));--h:36px;font-size:24px;font-weight:700;position:relative;top:4px;line-height:1.167">After I joined the company:</h3>
-  </div>
+  <!-- ===== Workflows ===== -->
+  <section class="xt-section" id="features" aria-labelledby="features-title">
+    <header class="xt-head">
+      <p class="xt-kicker">02 · Features</p>
+      <h2 id="features-title">Some features I’ve worked on</h2>
+      <ul class="xt-jump" aria-label="Features">
+        <li><a href="#development-management">Development Management</a></li>
+        <li><a href="#candidate-portal">Candidate Portal</a></li>
+        <li><a href="#holidays-optional-holidays">Holidays</a></li>
+        <li><a href="#white-label">White Label</a></li>
+      </ul>
+    </header>
 
-  <div class="row" style="--rt:56px">
-    <div class="cell reveal" style="--w:calc(130.44 * var(--u));--ml:calc(76.48 * var(--u))"><img src="assets/img/meurh360-03.webp" alt="MeuRH360 — preview 3" width="168" height="168" loading="lazy"></div>
-    <div class="cell reveal" style="--w:calc(130.44 * var(--u));--ml:calc(329.21 * var(--u))"><img src="assets/img/meurh360-04.webp" alt="MeuRH360 — preview 4" width="168" height="168" loading="lazy"></div>
-    <p class="cell" style="--w:calc(132.77 * var(--u));--ml:calc(-438.68 * var(--u));--mt:8px;--h:112px">125% increase in the number of workflows developed</p>
-    <p class="cell" style="--w:calc(132.77 * var(--u));--ml:calc(326.88 * var(--u));--mt:8px;--h:112px">100% increase in the number of research studies conducted</p>
-  </div>
+    <div class="xt-work">
+      <article class="xt-product">
+        <figure class="xt-shot xt-shot-wide reveal">
+          <img src="assets/img/meurh360-05.webp" alt="Development Management results on a tablet" width="772" height="579" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p class="xt-num">I</p>
+          <h3 id="development-management">Development Management</h3>
+          <p>This feature enables team leaders to evaluate their employees. HR can create evaluation cycles and, on the scheduled dates, conduct reviews, competency assessments, score calibration, and overall feedback. The results can then be presented in several different ways.</p>
+        </div>
+      </article>
+      <div class="xt-detail xt-flip">
+        <figure class="xt-shot xt-shot-tall reveal"><img src="assets/img/meurh360-06.webp" alt="9-box grid of evaluation results" width="598" height="881" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>Results can be visualised through a radar chart or a 9-box grid. Users can configure each 9-box quadrant, select the metrics, and customise the scoring system.</p>
+          <p>In addition to providing extensive flexibility when creating an evaluation cycle, users can also define which items will be assessed, competencies alone, or competencies combined with skills and attitudes.</p>
+        </div>
+      </div>
+      <div class="xt-detail">
+        <figure class="xt-shot reveal"><img src="assets/img/meurh360-07.webp" alt="Team evolution chart with a PDF report option" width="800" height="508" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>At the end of the process, a detailed report can be generated for an individual employee or an entire team, making it possible to track both individual and collective progress.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="row" style="--rt:121px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
+    <div class="xt-work">
+      <article class="xt-product xt-flip">
+        <figure class="xt-shot xt-shot-wide reveal">
+          <img src="assets/img/meurh360-08.webp" alt="Candidate Portal on a monitor" width="933" height="841" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p class="xt-num">II</p>
+          <h3 id="candidate-portal">Candidate Portal</h3>
+          <p>The Candidate Portal provides each client with an individual page where they can publish and manage job openings and hiring processes internally.</p>
+          <p>The system also allows job openings to be published on external platforms such as InfoJobs, Vagas.com, LinkedIn, and others.</p>
+        </div>
+      </article>
+      <div class="xt-detail">
+        <figure class="xt-shot reveal"><img src="assets/img/meurh360-09.webp" alt="Kanban board of candidates" width="1280" height="673" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>HR teams and evaluators have access to a Kanban board containing all candidates from any of the platforms being used.</p>
+          <p>Candidates can be rejected, approved, selected for interviews, organised according to preference, and ultimately, the most qualified candidates can be selected for hiring.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="row" style="--rt:40px">
-    <h3 class="cell c" style="--w:calc(883.58 * var(--u));--h:36px;font-size:24px;font-weight:700;position:relative;top:4px;line-height:1.167">Some of the workflows developed:</h3>
-  </div>
+    <div class="xt-work">
+      <article class="xt-product">
+        <figure class="xt-shot xt-shot-wide reveal">
+          <img src="assets/img/meurh360-10.webp" alt="Time sheet showing holidays on a tablet" width="1209" height="842" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p class="xt-num">III</p>
+          <h3 id="holidays-optional-holidays">Holidays</h3>
+          <p>Clients can configure their own holiday and optional holiday calendars. These dates are reflected in employees’ time sheets to determine the appropriate time-tracking rules for each day.</p>
+        </div>
+      </article>
+      <div class="xt-detail xt-flip">
+        <figure class="xt-shot reveal"><img src="assets/img/meurh360-11.webp" alt="Holiday configuration screen" width="1280" height="778" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>The configuration is handled through a simple and intuitive workflow in which HR can define whether a specific date is a holiday and which company locations it applies to. This makes it possible to include municipal and state holidays without affecting other locations operating in different states.</p>
+        </div>
+      </div>
+    </div>
 
-  <div class="row" style="--rt:55px">
-    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/meurh360-05.webp" alt="MeuRH360 — preview 5" width="464" height="348" loading="lazy"></div>
-    <h2 id="development-management" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:15px;--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">Development Management</h2>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:103px;--h:112px">This feature enables team leaders to evaluate their employees. HR can create evaluation cycles and, on the scheduled dates, conduct reviews, competency assessments, score calibration, and overall feedback. The results can then be presented in several different ways.</p>
-  </div>
+    <div class="xt-work">
+      <article class="xt-product xt-flip">
+        <figure class="xt-shot xt-shot-wide reveal">
+          <img src="assets/img/meurh360-12.webp" alt="White-label app on phones" width="1280" height="830" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p class="xt-num">IV</p>
+          <h3 id="white-label">White Label</h3>
+          <p>The system follows a white-label approach and is fully compatible with each client’s visual identity.</p>
+        </div>
+      </article>
+      <div class="xt-detail">
+        <figure class="xt-shot reveal"><img src="assets/img/meurh360-13.webp" alt="White-label environments in different client identities" width="1280" height="831" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p>The UX team prepares each environment while taking into account contrast, hierarchy, typography, and other design principles, all to provide the best possible user experience.</p>
+        </div>
+      </div>
+    </div>
+    <div class="xt-more xt-more-end reveal">
+      <p>There are many other workflows designed and developed based on the real needs of our clients. Other innovations within the platform include Document Signing, SSO Login, File Importer, Corporate Communications, and many others.</p>
+      <ul class="xt-chips" aria-label="Other innovations">
+        <li>Document Signing</li>
+        <li>SSO Login</li>
+        <li>File Importer</li>
+        <li>Corporate Communications</li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="row" style="--rt:48px">
-    <div class="cell reveal" style="--w:calc(283.4 * var(--u));--ml:calc(612.99 * var(--u))"><img src="assets/img/meurh360-06.webp" alt="MeuRH360 — preview 6" width="365" height="538" loading="lazy"></div>
-    <p class="cell" style="--w:calc(577.66 * var(--u));--ml:calc(-890.56 * var(--u));--mt:90px;--h:84px">Results can be visualised through a radar chart or a 9-box grid. Users can configure each 9-box quadrant, select the metrics, and customise the scoring system.</p>
-    <p class="cell" style="--w:calc(577.66 * var(--u));--ml:calc(-577.66 * var(--u));--mt:190px;--h:84px">In addition to providing extensive flexibility when creating an evaluation cycle, users can also define which items will be assessed, competencies alone, or competencies combined with skills and attitudes.</p>
-  </div>
+  <!-- ===== Clients ===== -->
+  <section class="xt-section xt-sep" id="clients" aria-labelledby="clients-title">
+    <header class="xt-head">
+      <p class="xt-kicker">03 · Clients</p>
+      <h2 id="clients-title">Built on real client needs</h2>
+    </header>
+    <ul class="xt-wall reveal" aria-label="Clients of MeuRH360">
+      <li><img src="assets/img/logo-bradesco-saude.webp" alt="Bradesco Saúde" width="84" height="44" loading="lazy"></li>
+      <li><img src="assets/img/logo-metlife.webp" alt="MetLife" width="84" height="44" loading="lazy"></li>
+      <li><img src="assets/img/logo-coritiba.webp" alt="Coritiba Football Club" width="84" height="44" loading="lazy"></li>
+      <li><img src="assets/img/logo-souza-lima.webp" alt="Grupo Souza Lima" width="84" height="44" loading="lazy"></li>
+      <li><img src="assets/img/logo-amil.webp" alt="Amil" width="84" height="44" loading="lazy"></li>
+      <li><img src="assets/img/logo-csd.webp" alt="CSD" width="84" height="44" loading="lazy"></li>
+    </ul>
+  </section>
 
-  <div class="row" style="--rt:47px">
-    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/meurh360-07.webp" alt="MeuRH360 — preview 7" width="464" height="294" loading="lazy"></div>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:92px;--h:84px">At the end of the process, a detailed report can be generated for an individual employee or an entire team, making it possible to track both individual and collective progress.</p>
-  </div>
-
-  <div class="row" style="--rt:122px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
-
-  <div class="row" style="--rt:32px">
-    <div class="cell reveal" style="--w:calc(283.4 * var(--u));--ml:calc(612.99 * var(--u))"><img src="assets/img/meurh360-08.webp" alt="MeuRH360 — preview 8" width="365" height="329" loading="lazy"></div>
-    <h2 id="candidate-portal" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">Candidate Portal</h2>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:102px;--h:84px">The Candidate Portal provides each client with an individual page where they can publish and manage job openings and hiring processes internally.</p>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:202px;--h:56px">The system also allows job openings to be published on external platforms such as InfoJobs, Vagas.com, LinkedIn, and others.</p>
-  </div>
-
-  <div class="row" style="--rt:48px">
-    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/meurh360-09.webp" alt="MeuRH360 — preview 9" width="464" height="244" loading="lazy"></div>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:8px;--h:56px">HR teams and evaluators have access to a Kanban board containing all candidates from any of the platforms being used.</p>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:80px;--h:84px">Candidates can be rejected, approved, selected for interviews, organised according to preference, and ultimately, the most qualified candidates can be selected for hiring.</p>
-  </div>
-
-  <div class="row" style="--rt:120px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
-
-  <div class="row" style="--rt:32px">
-    <div class="cell reveal" style="--w:calc(283.4 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/meurh360-10.webp" alt="MeuRH360 — preview 10" width="365" height="254" loading="lazy"></div>
-    <h2 id="holidays-optional-holidays" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(106.37 * var(--u));--mt:14px;--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">Holidays &amp; Optional Holidays</h2>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:102px;--h:84px">Clients can configure their own holiday and optional holiday calendars. These dates are reflected in employees’ time sheets to determine the appropriate time-tracking rules for each day.</p>
-  </div>
-
-  <div class="row" style="--rt:49px">
-    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/meurh360-11.webp" alt="MeuRH360 — preview 11" width="464" height="282" loading="lazy"></div>
-    <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:57px;--h:140px">The configuration is handled through a simple and intuitive workflow in which HR can define whether a specific date is a holiday and which company locations it applies to. This makes it possible to include municipal and state holidays without affecting other locations operating in different states.</p>
-  </div>
-
-  <div class="row" style="--rt:121px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
-
-  <div class="row" style="--rt:32px">
-    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/meurh360-12.webp" alt="MeuRH360 — preview 12" width="562" height="365" loading="lazy"></div>
-    <h2 id="white-label" class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">White Label</h2>
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-423.93 * var(--u));--mt:102px;--h:56px">The system follows a white-label approach and is fully compatible with each client’s visual identity.</p>
-  </div>
-
-  <div class="row" style="--rt:48px">
-    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(459.26 * var(--u))"><img src="assets/img/meurh360-13.webp" alt="MeuRH360 — preview 13" width="562" height="365" loading="lazy"></div>
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-889.79 * var(--u));--mt:94px;--h:84px">The UX team prepares each environment while taking into account contrast, hierarchy, typography, and other design principles, all to provide the best possible user experience.</p>
-  </div>
-
-  <div class="row" style="--rt:121px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
-
-  <div class="row" style="--rt:40px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:56px">There are many other workflows designed and developed based on the real needs of our clients. Other innovations within the platform include Document Signing, SSO Login, File Importer, Corporate Communications, and many others.</p>
-  </div>
-
-  <div class="page-end" style="--h:65px"></div>
   <nav class="case-nav" aria-label="Project navigation">
     <a class="prev" href="xipptech.html"><small>Previous project</small><span>← XippTech</span></a>
     <a class="next" href="ux-analyzer.html"><small>Next project</small><span>UX Analyzer →</span></a>
