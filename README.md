@@ -17,4 +17,4 @@ assets/img/                WebP images
 
 Notes
 - The project pages (everything except `index.html` and `about.html`) were generated from the original Google Sites layout with `.claude/gen.js`. Re-running it overwrites them, so edit the HTML directly from now on.
-- Before publishing: make `og:image` an absolute URL (`https://your-domain/assets/img/img_10.webp`) in `index.html`, `about.html` and the generated pages.
+- Live at https://felipeparreiras.com (GitHub Pages, repo SoyFelps/portfolio). Share image: `assets/img/og-image.jpg` (1200x630); canonical and Open Graph URLs point to the final domain.
