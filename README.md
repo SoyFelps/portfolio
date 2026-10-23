@@ -5,7 +5,7 @@ Static site (HTML + CSS + a little vanilla JS). No build step: open `index.html`
 ```
 index.html                 Portfolio (home) — hand-written
 ai-workflows.html          AI Workflows
-about.html                 About + résumé (replaces about-me.html and resume.html, which now redirect)
+about.html                 About + resume (replaces about-me.html and resume.html, which now redirect)
 contact.html
 xipptech · meurh360 · ux-analyzer · style-guide · flory-page ·
 organogram · calendar · variansee · file-guard-page · inclinic-page ·

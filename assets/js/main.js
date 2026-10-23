@@ -69,3 +69,24 @@ if ('IntersectionObserver' in window && revealEls.length) {
 } else {
   revealEls.forEach((el) => el.classList.add('in'));
 }
+
+// "Back" on project pages returns to the portfolio at the scroll position the visitor left.
+const SCROLL_KEY = 'portfolio-home-scroll', RESTORE_KEY = 'portfolio-restore-home';
+const store = {
+  get: (k) => { try { return sessionStorage.getItem(k); } catch (e) { return null; } },
+  set: (k, v) => { try { sessionStorage.setItem(k, v); } catch (e) { /* storage unavailable */ } },
+  del: (k) => { try { sessionStorage.removeItem(k); } catch (e) { /* storage unavailable */ } },
+};
+if (document.querySelector('.hero')) {
+  window.addEventListener('pagehide', () => store.set(SCROLL_KEY, String(window.scrollY)));
+  if (store.get(RESTORE_KEY) === '1') {
+    store.del(RESTORE_KEY);
+    const y = Number(store.get(SCROLL_KEY)) || 0;
+    if (y > 0) {
+      const go = () => window.scrollTo({ top: y, behavior: 'instant' });
+      go();
+      window.addEventListener('load', () => { go(); setTimeout(go, 250); });
+    }
+  }
+}
+document.querySelectorAll('.btn-back').forEach((a) => a.addEventListener('click', () => store.set(RESTORE_KEY, '1')));
