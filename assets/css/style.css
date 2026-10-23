@@ -627,7 +627,7 @@ main { animation: fade .4s ease; }
 .logo-wall { margin-top: 64px; }
 .hero .logo-wall .lead { margin: 0 0 20px; text-align: left; }
 .logo-wall .clients {
-  display: grid; grid-template-columns: repeat(9, 1fr);
+  display: grid; grid-template-columns: repeat(8, 1fr);
   width: auto; max-width: none; margin: 0; padding: 0; gap: 0;
   list-style: none;
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
