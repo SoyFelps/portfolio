@@ -3,8 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Felipe Parreiras</title>
-  <meta name="description" content="Felipe Parreiras — Product Designer. UX & UI Designer certified by Google.">
+  <title>Felipe Parreiras — Product Designer</title>
+  <meta name="description" content="Felipe Parreiras is a Product Designer working on B2B SaaS (HR, benefits and telemedicine) and prototyping with AI. UX & UI Designer certified by Google.">
+  <meta name="theme-color" content="#292a2f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Felipe Parreiras — Product Designer">
+  <meta property="og:description" content="B2B SaaS product design (HR, benefits, telemedicine) and AI-assisted prototyping.">
+  <!-- When the site goes live, make og:image an absolute URL (https://your-domain/assets/img/img_10.webp) -->
+  <meta property="og:image" content="assets/img/img_10.webp">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="assets/img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,17 +20,18 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <a class="brand" href="index.html"><img src="assets/img/img_00.png" alt=""><span>Felipe Parreiras</span></a>
+  <a class="brand" href="index.html" aria-label="Felipe Parreiras — home"><img src="assets/img/img_00.webp" alt=""><span>Felipe Parreiras</span></a>
   <button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
   <nav class="site-nav" aria-label="Main">
     <ul>
       <li><a href="index.html" aria-current="page">Portfolio</a></li>
       <li><a href="ai-workflows.html">AI Workflows</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <a class="nav-cta" href="https://drive.google.com/file/d/1EqaxhshqNAYgQYmQpevH0r5KFkLNr01Z/view?usp=sharing" target="_blank" rel="noopener">Résumé</a>
     <button class="search-btn" aria-label="Search"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
   </nav>
 </header>
@@ -35,101 +43,124 @@
   </div>
 </div>
 
-<main>
+<main id="main">
 
   <!-- Hero -->
   <section class="wrap hero">
     <div class="pad">
       <h1>Felipe Parreiras</h1>
-      <h2 class="role">Product Designer</h2>
+      <p class="role">Product Designer</p>
+      <p class="tagline">I design B2B SaaS products for HR, benefits and telemedicine, and prototype ideas with AI.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#highlights">View my work</a>
+        <a class="btn" href="https://drive.google.com/file/d/1EqaxhshqNAYgQYmQpevH0r5KFkLNr01Z/view?usp=sharing" target="_blank" rel="noopener">Download résumé</a>
+      </div>
       <p class="lead">Through my work, I have created products used by companies such as:</p>
     </div>
     <ul class="clients">
-      <li><img src="assets/img/img_01.png" alt="iFood"></li>
-      <li><img src="assets/img/img_02.png" alt="Samsung"></li>
-      <li><img src="assets/img/img_03.png" alt="Sírio-Libanês"></li>
-      <li><img src="assets/img/img_04.png" alt="MetLife"></li>
-      <li><img src="assets/img/img_05.png" alt="Coritiba"></li>
-      <li><img src="assets/img/img_06.png" alt="Grupo Souza Lima"></li>
-      <li><img src="assets/img/img_07.png" alt="Unimed"></li>
-      <li><img src="assets/img/img_08.png" alt="CSD"></li>
-      <li><img src="assets/img/img_09.png" alt="Outback"></li>
+      <li><img src="assets/img/img_01.webp" alt="iFood"></li>
+      <li><img src="assets/img/img_02.webp" alt="Samsung"></li>
+      <li><img src="assets/img/img_03.webp" alt="Sírio-Libanês"></li>
+      <li><img src="assets/img/img_04.webp" alt="MetLife"></li>
+      <li><img src="assets/img/img_05.webp" alt="Coritiba"></li>
+      <li><img src="assets/img/img_06.webp" alt="Grupo Souza Lima"></li>
+      <li><img src="assets/img/img_07.webp" alt="Unimed"></li>
+      <li><img src="assets/img/img_08.webp" alt="CSD"></li>
+      <li><img src="assets/img/img_09.webp" alt="Outback"></li>
     </ul>
 
     <div class="pad about-row">
       <p>I’m a UX &amp; UI Designer certified by Google, working as a Product Designer and Project Manager. I work across the entire product development process, from discovery, ideation, and research to the creation of wireframes, high-fidelity prototypes, and usability testing. I also work directly with clients and Product Owners (POs). My routine includes creating development plans, managing sprints, and conducting quality assurance testing.</p>
       <div class="side">
-        <img class="photo" src="assets/img/img_10.png" alt="Felipe Parreiras">
+        <img class="photo" src="assets/img/img_10.webp" alt="Portrait of Felipe Parreiras">
         <a class="btn" href="contact.html">Contact</a>
       </div>
     </div>
 
-    <h2 class="section-title pad highlights-title">Highlights</h2>
+    <h2 class="section-title pad highlights-title" id="highlights">Highlights</h2>
   </section>
 
   <section class="wrap projects" aria-label="Highlights">
-    <article class="project">
-      <a href="ai-workflows.html"><img class="cover" src="assets/img/img_11.png" alt="Claude Code &amp; Designing with AI"></a>
+    <article class="project reveal">
+      <a href="ai-workflows.html" tabindex="-1" aria-hidden="true"><img class="cover" src="assets/img/img_11.webp" alt=""></a>
       <div class="body">
         <h3 class="has-tag">Claude Code &amp; Designing with AI</h3><span class="tag">New!</span>
         <p>Using AI in design workflows is now part of reality. Using AI to brainstorm and prototype is not only possible, but increasingly expected of Product Designers today. There are two possible approaches: 1- design and prototype directly with AI, or 2- Use Figma MCP to maintain manual control over the design.</p>
-        <a class="btn" href="ai-workflows.html">View more →</a>
+        <a class="btn" href="ai-workflows.html">View more →<span class="sr-only"> about Claude Code &amp; Designing with AI</span></a>
       </div>
     </article>
 
-    <article class="project">
-      <a href="xipptech.html"><img class="cover" src="assets/img/img_12.png" alt="XippTech"></a>
+    <article class="project reveal">
+      <a href="xipptech.html" tabindex="-1" aria-hidden="true"><img class="cover" src="assets/img/img_12.webp" alt=""></a>
       <div class="body">
         <h3>XippTech</h3>
         <p>UX Designer working directly with POs and clients to build and maintain various B2B software solutions (HR, benefits, telemedicine) as well as end-user applications. Our products are used by companies such as Outback, Unimed, Samsung, C6 Bank, and others.</p>
-        <a class="btn" href="xipptech.html">View more →</a>
+        <a class="btn" href="xipptech.html">View more →<span class="sr-only"> about XippTech</span></a>
       </div>
     </article>
 
-    <article class="project">
-      <a href="meurh360.html"><img class="cover" src="assets/img/img_13.png" alt="MeuRH360"></a>
+    <article class="project reveal">
+      <a href="meurh360.html" tabindex="-1" aria-hidden="true"><img class="cover" src="assets/img/img_13.webp" alt=""></a>
       <div class="body">
         <h3>MeuRH360</h3>
         <p>I led the creation of workflows based on market needs, enabling major companies such as MetLife, CSD, and others to become clients. The solution is a complete HR management ecosystem covering time tracking, job postings, performance reviews, position management, team management, and much more.</p>
-        <a class="btn" href="meurh360.html">View more →</a>
+        <a class="btn" href="meurh360.html">View more →<span class="sr-only"> about MeuRH360</span></a>
       </div>
     </article>
 
-    <article class="project">
-      <a href="ux-analyzer.html"><img class="cover" src="assets/img/img_14.png" alt="UX Analyzer"></a>
+    <article class="project reveal">
+      <a href="ux-analyzer.html" tabindex="-1" aria-hidden="true"><img class="cover" src="assets/img/img_14.webp" alt=""></a>
       <div class="body">
         <h3>UX Analyzer</h3>
-        <p>AX Analyzer is a fully functional web app that analyzes user interfaces using specialized algorithms and artificial intelligence to evaluate UI and UX best practices, including spacing, contrast, hierarchy, interactive elements, and accessibility.</p>
-        <a class="btn" href="ux-analyzer.html">View more →</a>
+        <p>UX Analyzer is a fully functional web app that analyzes user interfaces using specialized algorithms and artificial intelligence to evaluate UI and UX best practices, including spacing, contrast, hierarchy, interactive elements, and accessibility.</p>
+        <a class="btn" href="ux-analyzer.html">View more →<span class="sr-only"> about UX Analyzer</span></a>
       </div>
     </article>
 
-    <article class="project">
-      <a href="flory-page.html"><img class="cover" src="assets/img/img_15.png" alt="Flory"></a>
+    <article class="project reveal">
+      <a href="flory-page.html" tabindex="-1" aria-hidden="true"><img class="cover" src="assets/img/img_15.webp" alt=""></a>
       <div class="body">
         <h3>Flory</h3>
         <p>A case study for the creation of a mobile app for buying and selling plants and flowers, as well as a social network focused on these topics. Users can share photos and opinions about their favourite plants and interact with others through the blog or chat.</p>
-        <a class="btn" href="flory-page.html">View more →</a>
+        <a class="btn" href="flory-page.html">View more →<span class="sr-only"> about Flory</span></a>
       </div>
     </article>
   </section>
 
-  <div class="wrap">
-    <div class="testimonials">
-      <img src="assets/img/img_16.png" alt="Testimonial from Volney Olimpio, UX/UI Designer at TOTVS">
-      <img src="assets/img/img_17.png" alt="Testimonial from Luiz Henrique Borges, Natura Leads Contract Manager">
+  <!-- Testimonials -->
+  <section class="wrap testimonials" aria-labelledby="quotes-title">
+    <h2 class="section-title pad" id="quotes-title">What colleagues say</h2>
+    <div class="quotes">
+      <figure class="quote reveal">
+        <blockquote>
+          <p>“Felipe is the present of UX design and with great certainty will be the innovative and prolific professional of the future. During the period in which we collaborated, he demonstrated excellent skills in market research, usability testing and the use of Figma. His ability to carry out detailed research, interpret data and apply these insights to the design was truly outstanding. He conducted effective usability tests, identifying strong points and areas for improvement in our projects.”</p>
+        </blockquote>
+        <figcaption>
+          <img class="avatar" src="assets/img/avatar-volney.webp" alt="" width="56" height="56">
+          <span><strong>Volney Olimpio</strong><small>UX/UI Designer at TOTVS</small></span>
+        </figcaption>
+      </figure>
+      <figure class="quote reveal">
+        <blockquote>
+          <p>“Felipe demonstrated great knowledge in bringing valuable insights to the market, helping to align strategies effectively. His ability to master digital platforms is impressive, always seeking practical and functional solutions. I’m very grateful for the chance to work with him!”</p>
+        </blockquote>
+        <figcaption>
+          <img class="avatar" src="assets/img/avatar-luiz.webp" alt="" width="56" height="56">
+          <span><strong>Luiz Henrique Borges</strong><small>Natura Leads Contract Manager</small></span>
+        </figcaption>
+      </figure>
     </div>
-  </div>
+  </section>
 
-  <!-- Solution and Innovations -->
-  <hr class="rule" style="margin-top:122px">
+  <!-- Solutions and Innovations -->
+  <hr class="rule" style="margin-top:100px">
   <section class="wrap block">
-    <h2 class="section-title center">Solution and Innovations</h2>
+    <h2 class="section-title center">Solutions and Innovations</h2>
     <p class="intro">The projects below demonstrate innovative solutions to real-world problems that are already being used in the market.</p>
     <div class="thumbs labeled">
-      <a href="organograma.html"><img src="assets/img/img_18.jpg" alt="Organogram"><span>Organogram →</span></a>
-      <a href="calendario.html"><img src="assets/img/img_19.jpg" alt="Calendar"><span>Calendar →</span></a>
-      <a href="variansee.html"><img src="assets/img/img_20.jpg" alt="Variansee"><span>Variansee (High Contrast) →</span></a>
+      <a class="reveal" href="organogram.html"><img src="assets/img/img_18.webp" alt="Organogram: company structure and team management screen"><span>Organogram →</span></a>
+      <a class="reveal" href="calendar.html"><img src="assets/img/img_19.webp" alt="Calendar: team absences planning screen"><span>Calendar →</span></a>
+      <a class="reveal" href="variansee.html"><img src="assets/img/img_20.webp" alt="Variansee: browser extension for contrast adjustment"><span>Variansee (High Contrast) →</span></a>
     </div>
   </section>
 
@@ -138,21 +169,21 @@
   <section class="wrap block style-guide">
     <h2 class="section-title center">Style Guide</h2>
     <p class="intro">Here you can explore some of the components commonly found in style guides and design systems. The selected elements demonstrate the use of variants, typography, colours, shadows, cards, and more.</p>
-    <div class="cover-row"><a href="style-guide.html"><img src="assets/img/img_21.jpg" alt="Style Guide"></a><a class="btn" href="style-guide.html">View more →</a></div>
+    <div class="cover-row"><a href="style-guide.html"><img src="assets/img/img_21.webp" alt="Style guide components: buttons, selectors, cards and colours"></a><a class="btn" href="style-guide.html">View more →<span class="sr-only"> about the Style Guide</span></a></div>
   </section>
 
   <!-- Design & Prototypes -->
   <hr class="rule" style="margin-top:120px">
   <section class="wrap block">
     <h2 class="section-title center">Design &amp; Prototypes</h2>
-    <div class="thumbs gallery">
-      <a href="flory-page.html"><img src="assets/img/img_22.jpg" alt="Flory"></a>
-      <a href="file-guard-page.html"><img src="assets/img/img_23.jpg" alt="File Guard"></a>
-      <a href="inclinic-page.html"><img src="assets/img/img_24.jpg" alt="inClinic"></a>
-      <a href="castelo.html"><img src="assets/img/img_25.jpg" alt="Castelo"></a>
-      <a href="wallet-guide-page.html"><img src="assets/img/img_26.png" alt="Wallet Guide"></a>
-      <a href="verona-page.html"><img src="assets/img/img_27.jpg" alt="Verona Film Festival"></a>
-    </div>
+    <ul class="cards">
+      <li><a class="card reveal" href="flory-page.html"><img src="assets/img/img_22.webp" alt="Flory mobile app screens"><span class="card-title">Flory</span><span class="card-meta">Mobile app · Figma prototype</span></a></li>
+      <li><a class="card reveal" href="file-guard-page.html"><img src="assets/img/img_23.webp" alt="File Guard application screens"><span class="card-title">File Guard</span><span class="card-meta">Figma prototype</span></a></li>
+      <li><a class="card reveal" href="inclinic-page.html"><img src="assets/img/img_24.webp" alt="inClinic app and desktop screens"><span class="card-title">inClinic</span><span class="card-meta">App · Desktop · Tablet prototypes</span></a></li>
+      <li><a class="card reveal" href="castelo.html"><img src="assets/img/img_25.webp" alt="Castelo website screens"><span class="card-title">Castelo</span><span class="card-meta">Figma prototype</span></a></li>
+      <li><a class="card reveal" href="wallet-guide-page.html"><img src="assets/img/img_26.webp" alt="Wallet Guide app screens"><span class="card-title">Wallet Guide</span><span class="card-meta">Figma prototype</span></a></li>
+      <li><a class="card reveal" href="verona-page.html"><img src="assets/img/img_27.webp" alt="Verona Film Festival website screens"><span class="card-title">Verona Film Festival</span><span class="card-meta">Figma prototype</span></a></li>
+    </ul>
   </section>
 
   <!-- HTML & CSS -->
@@ -161,8 +192,8 @@
     <h2 class="section-title center">HTML &amp; CSS</h2>
     <p class="intro">Below, you can find several front-end projects built with HTML and CSS. You can navigate through the pages and access the source code in their respective GitHub repositories.</p>
     <div class="duo">
-      <a href="mixzer.html"><img src="assets/img/img_28.jpg" alt="Mixzer"><img class="logo" src="assets/img/img_30.png" alt="Mixzer"></a>
-      <a href="echoux.html"><img src="assets/img/img_29.jpg" alt="Echo UX"><img class="logo" src="assets/img/img_31.png" alt="Echo UX"></a>
+      <a class="reveal" href="mixzer.html"><img src="assets/img/img_28.webp" alt="Mixzer homepage"><img class="logo" src="assets/img/img_30.webp" alt="Mixzer"><span class="caption">Homepage of a fictional music website, inspired by Spotify.</span></a>
+      <a class="reveal" href="echoux.html"><img src="assets/img/img_29.webp" alt="Echo UX homepage"><img class="logo" src="assets/img/img_31.webp" alt="Echo UX"><span class="caption">Homepage of a fictional UX design website, inspired by Spinx.</span></a>
     </div>
   </section>
 
@@ -173,13 +204,13 @@
     <p class="msg">Feel free to get in touch with me. I’m open to questions, opportunities, or even just having a conversation about UX.</p>
     <div class="lines">
       <p>E-mail: <a href="mailto:fgparreiras@gmail.com">fgparreiras@gmail.com</a></p>
-      <p>Linkedin: <a href="http://www.linkedin.com/in/felipe-parreiras-ux" target="_blank" rel="noopener">www.linkedin.com/in/felipe-parreiras-ux</a></p>
+      <p>LinkedIn: <a href="http://www.linkedin.com/in/felipe-parreiras-ux" target="_blank" rel="noopener">www.linkedin.com/in/felipe-parreiras-ux</a></p>
     </div>
   </section>
 
 </main>
 
-<footer class="site-footer">Contact: fgparreiras@gmail.com</footer>
+<footer class="site-footer">Contact: <a href="mailto:fgparreiras@gmail.com">fgparreiras@gmail.com</a></footer>
 
 <script src="assets/js/main.js"></script>
 </body>

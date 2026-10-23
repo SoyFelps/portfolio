@@ -1,19 +1,20 @@
 # Felipe Parreiras — Portfolio
 
-Static site (HTML + CSS + a little vanilla JS), recreated from the Google Sites version.
-No build step: open `index.html` in a browser, or serve the folder with any static server.
+Static site (HTML + CSS + a little vanilla JS). No build step: open `index.html`, or serve the folder with any static server (`node .claude/serve.js` → http://localhost:5500).
 
 ```
-index.html              Portfolio (home)
-ai-workflows.html       AI Workflows
-resume.html · about-me.html · contact.html
-xipptech.html · meurh360.html · ux-analyzer.html · style-guide.html
-flory-page.html · file-guard-page.html · inclinic-page.html · castelo.html
-wallet-guide-page.html · verona-page.html
-organograma.html · calendario.html · variansee.html · mixzer.html · echoux.html
-assets/css/style.css    All styles (design tokens are CSS variables in :root)
-assets/js/main.js       Sticky header, mobile menu, site search
-assets/img/             All images
+index.html                 Portfolio (home) — hand-written
+ai-workflows.html          AI Workflows
+about.html                 About + résumé (replaces about-me.html and resume.html, which now redirect)
+contact.html
+xipptech · meurh360 · ux-analyzer · style-guide · flory-page ·
+organogram · calendar · variansee · file-guard-page · inclinic-page ·
+castelo · wallet-guide-page · verona-page · mixzer · echoux   (.html)
+assets/css/style.css       All styles (tokens are CSS variables in :root)
+assets/js/main.js          Sticky header, mobile menu, site search, reveal-on-scroll
+assets/img/                WebP images
 ```
 
-Local preview: `node .claude/serve.js` → http://localhost:5500
+Notes
+- The project pages (everything except `index.html` and `about.html`) were generated from the original Google Sites layout with `.claude/gen.js`. Re-running it overwrites them, so edit the HTML directly from now on.
+- Before publishing: make `og:image` an absolute URL (`https://your-domain/assets/img/img_10.webp`) in `index.html`, `about.html` and the generated pages.

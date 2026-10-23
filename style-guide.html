@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Felipe Parreiras - Style Guide</title>
+  <meta name="description" content="On this page, you will find examples of style guidelines and notes on the use of different elements. The first example features a more modern look, with…">
+  <meta name="theme-color" content="#292a2f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Felipe Parreiras - Style Guide">
+  <meta property="og:description" content="On this page, you will find examples of style guidelines and notes on the use of different elements. The first example features a more modern look, with…">
+  <meta property="og:image" content="assets/img/img_10.webp">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="assets/img/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,17 +19,18 @@
 </head>
 <body>
 
+<a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header">
-  <a class="brand" href="index.html"><img src="assets/img/img_00.png" alt=""><span>Felipe Parreiras</span></a>
+  <a class="brand" href="index.html" aria-label="Felipe Parreiras — home"><img src="assets/img/img_00.webp" alt=""><span>Felipe Parreiras</span></a>
   <button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
   <nav class="site-nav" aria-label="Main">
     <ul>
       <li><a href="index.html">Portfolio</a></li>
       <li><a href="ai-workflows.html">AI Workflows</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="about-me.html">About Me</a></li>
+      <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
+    <a class="nav-cta" href="https://drive.google.com/file/d/1EqaxhshqNAYgQYmQpevH0r5KFkLNr01Z/view?usp=sharing" target="_blank" rel="noopener">Résumé</a>
     <button class="search-btn" aria-label="Search"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
   </nav>
 </header>
@@ -34,10 +42,10 @@
   </div>
 </div>
 
-<main class="page">
+<main class="page" id="main">
 
   <div class="row" style="--rt:24px">
-    <a class="btn cell" href="index.html" style="--w:calc(130.44 * var(--u));--ml:calc(-0.39 * var(--u))">Back</a>
+    <a class="btn btn-back cell" href="index.html" style="--w:calc(130.44 * var(--u));--ml:calc(-0.39 * var(--u))">← Back</a>
     <h1 class="cell" style="--w:calc(577.66 * var(--u));--ml:calc(29.5 * var(--u));--mt:8px;--h:89px;font-size:64px;font-weight:700;color:rgb(255, 255, 255);text-align:center;line-height:1.38">Style Guide</h1>
   </div>
 
@@ -46,64 +54,64 @@
   </div>
 
   <div class="row" style="--rt:64px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;text-align:center;line-height:normal;position:relative;top:5px">Style Guide 1</p>
+    <h2 id="style-guide-1" class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;text-align:center;line-height:normal;position:relative;top:5px">Style Guide 1</h2>
   </div>
 
   <div class="row" style="--rt:56px">
-    <div class="cell" style="--w:calc(436.35 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-01.jpg" alt="" width="562" height="343" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Buttons</h1>
+    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-01.webp" alt="Style Guide — preview 1" width="562" height="343" loading="lazy"></div>
+    <h2 id="buttons" class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Buttons</h2>
     <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-423.93 * var(--u));--mt:132px;--h:112px;color:rgb(227, 227, 227)">In this example, the buttons were designed to accommodate different scenarios. All variants include active, hover, and disabled states. This approach follows the recommendations of Google’s Material Design 3.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(436.35 * var(--u));--ml:calc(459.26 * var(--u))"><img src="assets/img/style-guide-02.jpg" alt="" width="562" height="231" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-889.79 * var(--u));--mt:14px;--h:177px;font-size:64px;font-weight:700;font-family:Roboto,Arial,sans-serif;line-height:1.38">Selectors and Switches</h1>
+    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(459.26 * var(--u))"><img src="assets/img/style-guide-02.webp" alt="Style Guide — preview 2" width="562" height="231" loading="lazy"></div>
+    <h2 id="selectors-and-switches" class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-889.79 * var(--u));--mt:14px;--h:177px;font-size:64px;font-weight:700;font-family:Roboto,Arial,sans-serif;line-height:1.38">Selectors and Switches</h2>
     <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-423.93 * var(--u));--mt:218px;--h:140px;color:rgb(227, 227, 227)">The selection options shown here are componentised and prototyped to be responsive, including hover effects. Switches are commonly used to enable or disable additional fields and include active, hover, and disabled states for both enabled and disabled configurations.</p>
   </div>
 
   <div class="row" style="--rt:62px">
-    <div class="cell" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-03.jpg" alt="" width="464" height="799" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:88px;font-size:64px;font-weight:700;font-family:Roboto,Arial,sans-serif;line-height:1.38">Cards</h1>
+    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-03.webp" alt="Style Guide — preview 3" width="464" height="799" loading="lazy"></div>
+    <h2 id="cards" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:88px;font-size:64px;font-weight:700;font-family:Roboto,Arial,sans-serif;line-height:1.38">Cards</h2>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:131px;--h:103px;color:rgb(227, 227, 227);line-height:1.38">These cards, created according to the Material Design guidelines, are used for social interactions between app users. The upper example includes a title, body text, and author information. The lower example also includes an image.</p>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:260px;--h:77px;color:rgb(227, 227, 227);line-height:1.38">To maintain consistency throughout the product’s visual identity, cards should follow the same border, shadow, and outline parameters as the other elements in the Style Guide.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(436.35 * var(--u));--ml:calc(459.26 * var(--u))"><img src="assets/img/style-guide-04.jpg" alt="" width="562" height="453" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-889.79 * var(--u));--mt:14px;--h:88px;font-size:56px;font-weight:700;line-height:1.577">Colour Scheme</h1>
+    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(459.26 * var(--u))"><img src="assets/img/style-guide-04.webp" alt="Style Guide — preview 4" width="562" height="453" loading="lazy"></div>
+    <h2 id="colour-scheme" class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-889.79 * var(--u));--mt:14px;--h:88px;font-size:56px;font-weight:700;line-height:1.577">Colour Scheme</h2>
     <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-423.93 * var(--u));--mt:130px;--h:103px;color:rgb(227, 227, 227);line-height:1.38">The colour scheme is essential to a product’s identity. Ideally, there should be enough colours to create an engaging visual appearance without making the interface confusing or compromising its identity.</p>
     <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-423.93 * var(--u));--mt:259px;--h:129px;color:rgb(227, 227, 227);line-height:1.38">In the example shown here, we work with primary and secondary colours, as well as colours for specific states such as success, warning, error, neutral, black, and white. This balanced palette ensures a clear and cohesive visual experience.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-05.jpg" alt="" width="464" height="563" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Typography</h1>
+    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-05.webp" alt="Style Guide — preview 5" width="464" height="563" loading="lazy"></div>
+    <h2 id="typography" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Typography</h2>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:131px;--h:103px;color:rgb(227, 227, 227);line-height:1.38">The typography system shown here provides enough text styles to organise page content dynamically and hierarchically without becoming overly varied. The selected font is Google’s Noto Sans, ensuring excellent readability.</p>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:260px;--h:52px;color:rgb(227, 227, 227);line-height:1.38">Large headings use a semi-italic bold style, while medium-sized headings provide additional emphasis and hierarchy.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(513.22 * var(--u));--ml:calc(383.17 * var(--u))"><img src="assets/img/style-guide-06.jpg" alt="" width="661" height="306" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Labels</h1>
+    <div class="cell reveal" style="--w:calc(513.22 * var(--u));--ml:calc(383.17 * var(--u))"><img src="assets/img/style-guide-06.webp" alt="Style Guide — preview 6" width="661" height="306" loading="lazy"></div>
+    <h2 id="labels" class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Labels</h2>
     <p class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(-347.84 * var(--u));--mt:131px;--h:77px;color:rgb(227, 227, 227);line-height:1.38">Labels are frequently used throughout the platform, both for search and filtering mechanisms and within questionnaire fields.</p>
     <p class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(-347.84 * var(--u));--mt:235px;--h:103px;color:rgb(227, 227, 227);line-height:1.38">As part of the design system and Style Guide, labels also follow the defined typography, colours, corner radius, and spacing, ensuring visual consistency.</p>
   </div>
 
   <div class="row" style="--rt:70px">
-    <div class="cell" style="--w:calc(283.4 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-07.jpg" alt="" width="365" height="376" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(106.37 * var(--u));--mt:14px;--h:88px;font-size:57.3333px;font-weight:700;line-height:1.54">Drop menu / Popover</h1>
+    <div class="cell reveal" style="--w:calc(283.4 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-07.webp" alt="Style Guide — preview 7" width="365" height="376" loading="lazy"></div>
+    <h2 id="drop-menu-popover" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(106.37 * var(--u));--mt:14px;--h:88px;font-size:57.3333px;font-weight:700;line-height:1.54">Drop menu / Popover</h2>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:130px;--h:140px;color:rgb(227, 227, 227)">This menu can be used with or without icons. It is responsive and componentised to maintain a consistent structure throughout the platform. It provides users with multiple options without cluttering the interface, as the options are displayed only after clicking a button, typically a three-dot menu button.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(206.53 * var(--u));--ml:calc(689.08 * var(--u))"><img src="assets/img/style-guide-08.jpg" alt="" width="266" height="266" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-889.79 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Shadows</h1>
+    <div class="cell reveal" style="--w:calc(206.53 * var(--u));--ml:calc(689.08 * var(--u))"><img src="assets/img/style-guide-08.webp" alt="Style Guide — preview 8" width="266" height="266" loading="lazy"></div>
+    <h2 id="shadows" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-889.79 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Shadows</h2>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:131px;--h:84px;color:rgb(227, 227, 227)">Shadows are also standardised throughout the system. The shadow shown here is used for cards and objects within the main body of the page.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-09.jpg" alt="" width="464" height="132" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Iconography</h1>
+    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-09.webp" alt="Style Guide — preview 9" width="464" height="132" loading="lazy"></div>
+    <h2 id="iconography" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Iconography</h2>
   </div>
 
   <div class="row" style="--rt:0px">
@@ -111,8 +119,8 @@
   </div>
 
   <div class="row" style="--rt:62px">
-    <div class="cell" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/style-guide-10.jpg" alt="" width="464" height="249" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Alerts</h1>
+    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/style-guide-10.webp" alt="Style Guide — preview 10" width="464" height="249" loading="lazy"></div>
+    <h2 id="alerts" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Alerts</h2>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:131px;--h:84px;color:rgb(227, 227, 227)">This simple alert pattern was designed to appear at the bottom of the screen after the user performs an action, providing clear and unobtrusive feedback.</p>
   </div>
 
@@ -121,45 +129,45 @@
   </div>
 
   <div class="row" style="--rt:40px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;text-align:center;line-height:normal;position:relative;top:5px">Style Guide 2</p>
+    <h2 id="style-guide-2" class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;text-align:center;line-height:normal;position:relative;top:5px">Style Guide 2</h2>
   </div>
 
   <div class="row" style="--rt:56px">
-    <div class="cell" style="--w:calc(590.09 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-11.jpg" alt="" width="760" height="497" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(270.97 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Buttons</h1>
+    <div class="cell reveal" style="--w:calc(590.09 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-11.webp" alt="Style Guide — preview 11" width="760" height="497" loading="lazy"></div>
+    <h2 id="buttons" class="cell" style="--w:calc(270.97 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Buttons</h2>
     <p class="cell" style="--w:calc(270.97 * var(--u));--ml:calc(-270.97 * var(--u));--mt:131px;--h:168px;color:rgb(227, 227, 227)">This example demonstrates the use of variants to create a button system, including active, hover, and disabled states. The buttons are also prototyped to create an engaging and immersive interaction.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(206.53 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-12.jpg" alt="" width="266" height="100" loading="lazy"></div>
-    <div class="cell" style="--w:calc(206.53 * var(--u));--ml:calc(253.12 * var(--u))"><img src="assets/img/style-guide-13.png" alt="" width="266" height="126" loading="lazy"></div>
-    <h3 class="cell" style="--w:calc(194.11 * var(--u));--ml:calc(-430.14 * var(--u));--mt:14px;--h:28px;font-weight:700">Breadcrumbs</h3>
-    <h3 class="cell" style="--w:calc(194.11 * var(--u));--ml:calc(265.54 * var(--u));--mt:14px;--h:28px;font-weight:700">Shadows</h3>
+    <div class="cell reveal" style="--w:calc(206.53 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-12.webp" alt="Style Guide — preview 12" width="266" height="100" loading="lazy"></div>
+    <div class="cell reveal" style="--w:calc(206.53 * var(--u));--ml:calc(253.12 * var(--u))"><img src="assets/img/style-guide-13.webp" alt="Style Guide — preview 13" width="266" height="126" loading="lazy"></div>
+    <p class="cell" style="--w:calc(194.11 * var(--u));--ml:calc(-430.14 * var(--u));--mt:14px;--h:28px;font-weight:700">Breadcrumbs</p>
+    <p class="cell" style="--w:calc(194.11 * var(--u));--ml:calc(265.54 * var(--u));--mt:14px;--h:28px;font-weight:700">Shadows</p>
     <p class="cell" style="--w:calc(194.11 * var(--u));--ml:calc(-653.75 * var(--u));--mt:70px;--h:84px;color:rgb(227, 227, 227)">Breadcrumbs are used for navigation between pages within a workflow.</p>
     <p class="cell" style="--w:calc(194.11 * var(--u));--ml:calc(265.54 * var(--u));--mt:70px;--h:140px;color:rgb(227, 227, 227)">It is recommended to standardise shadows for similar objects, such as cards, images, buttons, and other elements.</p>
   </div>
 
   <div class="row" style="--rt:62px">
-    <div class="cell" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/style-guide-14.jpg" alt="" width="464" height="300" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:88px;font-size:57.3333px;font-weight:700;line-height:1.54">Drop menu / Popover</h1>
+    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/style-guide-14.webp" alt="Style Guide — preview 14" width="464" height="300" loading="lazy"></div>
+    <h2 id="drop-menu-popover" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:88px;font-size:57.3333px;font-weight:700;line-height:1.54">Drop menu / Popover</h2>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:130px;--h:112px;color:rgb(227, 227, 227)">This menu can be strategically implemented to provide users with multiple actions or options while keeping the interface clean, as it is only displayed after clicking a specific button. It works particularly well with a three-dot menu button.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-15.jpg" alt="" width="464" height="613" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Labels</h1>
+    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/style-guide-15.webp" alt="Style Guide — preview 15" width="464" height="613" loading="lazy"></div>
+    <h2 id="labels" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Labels</h2>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:131px;--h:77px;color:rgb(227, 227, 227);line-height:1.38">Labels are commonly used across different platforms and for various purposes. In the example shown here, we have text, single-selection, multi-selection, search, and date labels.</p>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:234px;--h:77px;color:rgb(227, 227, 227);line-height:1.38">When prototyped, these components create an interactive experience and can make a significant difference in user engagement and immersion during product testing.</p>
   </div>
 
   <div class="row" style="--rt:48px">
-    <div class="cell" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/style-guide-16.jpg" alt="" width="464" height="440" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Typography</h1>
+    <div class="cell reveal" style="--w:calc(360.26 * var(--u));--ml:calc(536.12 * var(--u))"><img src="assets/img/style-guide-16.webp" alt="Style Guide — preview 16" width="464" height="440" loading="lazy"></div>
+    <h2 id="typography" class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Typography</h2>
     <p class="cell" style="--w:calc(500.8 * var(--u));--ml:calc(-500.8 * var(--u));--mt:131px;--h:140px;color:rgb(227, 227, 227)">This typography system was designed with specific use cases in mind, with each font size and style serving a particular purpose. A typography system containing only the essential options creates greater fluidity in the design and makes the application more visually consistent.</p>
   </div>
 
   <div class="row" style="--rt:61px">
-    <h1 class="cell c" style="--w:calc(883.58 * var(--u));--h:89px;font-size:64px;font-weight:700;text-align:center;line-height:1.38">Tables</h1>
+    <h2 id="tables" class="cell c" style="--w:calc(883.58 * var(--u));--h:89px;font-size:64px;font-weight:700;text-align:center;line-height:1.38">Tables</h2>
   </div>
 
   <div class="row" style="--rt:28px">
@@ -167,19 +175,24 @@
   </div>
 
   <div class="row" style="--rt:14px">
-    <div class="cell c" style="--w:calc(896 * var(--u))"><img src="assets/img/style-guide-17.jpg" alt="" width="1154" height="265" loading="lazy"></div>
+    <div class="cell c reveal" style="--w:calc(896 * var(--u))"><img src="assets/img/style-guide-17.webp" alt="Style Guide — preview 17" width="1154" height="265" loading="lazy"></div>
   </div>
 
   <div class="row" style="--rt:49px">
-    <div class="cell" style="--w:calc(513.22 * var(--u));--ml:calc(383.17 * var(--u))"><img src="assets/img/style-guide-18.jpg" alt="" width="661" height="531" loading="lazy"></div>
-    <h1 class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Colors</h1>
+    <div class="cell reveal" style="--w:calc(513.22 * var(--u));--ml:calc(383.17 * var(--u))"><img src="assets/img/style-guide-18.webp" alt="Style Guide — preview 18" width="661" height="531" loading="lazy"></div>
+    <h2 id="colors" class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(-890.56 * var(--u));--mt:14px;--h:89px;font-size:64px;font-weight:700;line-height:1.38">Colours</h2>
     <p class="cell" style="--w:calc(347.84 * var(--u));--ml:calc(-347.84 * var(--u));--mt:131px;--h:196px;color:rgb(227, 227, 227)">To ensure consistency and maintain the brand identity throughout the product, it is necessary to follow a defined colour scheme. In the example shown here, the primary colours come first, followed by secondary colours, warning, danger, success, information, a standard background colour, and finally black and white.</p>
   </div>
 
   <div class="page-end" style="--h:57px"></div>
+  <nav class="case-nav" aria-label="Project navigation">
+    <a class="prev" href="flory-page.html"><small>Previous project</small><span>← Flory</span></a>
+    <a class="next" href="organogram.html"><small>Next project</small><span>Organogram →</span></a>
+  </nav>
+
 </main>
 
-<footer class="site-footer tight">Contact: fgparreiras@gmail.com</footer>
+<footer class="site-footer tight">Contact: <a href="mailto:fgparreiras@gmail.com">fgparreiras@gmail.com</a></footer>
 
 <script src="assets/js/main.js"></script>
 </body>
