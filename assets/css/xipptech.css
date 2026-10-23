@@ -273,3 +273,5 @@
   .xt-tools-strip { padding: 16px; }
   .xt-shot-full { padding: 16px; }
 }
+
+.xt-hero-art img.xt-hero-tools { width: 100%; max-width: 520px; margin: 0 auto; filter: none; }
