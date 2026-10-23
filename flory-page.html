@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/xipptech.css">
 </head>
 <body>
 
@@ -49,23 +50,336 @@
   </div>
 </div>
 
-<main class="page" id="main">
-  <h1 class="sr-only">Flory</h1>
+<main class="xt" id="main">
 
-  <div class="row" style="--rt:24px">
-    <div class="cell reveal" style="--w:calc(283.4 * var(--u));--ml:calc(306.3 * var(--u))"><img src="assets/img/flory-page-01.webp" alt="Flory — preview" width="365" height="159" loading="lazy"></div>
-    <a class="btn btn-back cell" href="index.html" style="--w:calc(130.44 * var(--u));--ml:calc(-590.09 * var(--u));--mt:40px"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
-  </div>
+  <!-- ===== Hero ===== -->
+  <section class="xt-hero" aria-labelledby="xt-title">
+    <div class="xt-hero-copy">
+      <a class="btn btn-back" href="index.html"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
+      <p class="xt-eyebrow">Case study</p>
+      <h1 id="xt-title">Flory</h1>
+      <p class="xt-lead">A mobile app for ordering plants and flowers.</p>
+      <p class="xt-btnrow"><a class="btn btn-primary" href="https://www.figma.com/proto/oINSel2I48gQGN1dYapnH7/Flory?type=design&amp;node-id=164-9685&amp;t=fVbRaaP8MrWE966J-1&amp;scaling=scale-down&amp;page-id=49%3A4&amp;starting-point-node-id=164%3A9660&amp;show-proto-sidebar=1&amp;mode=design" target="_blank" rel="noopener">Figma prototype<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></p>
+      <ul class="xt-jump" aria-label="Jump to a section">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#refining">Refining</a></li>
+        <li><a href="#takeaways">Takeaways</a></li>
+      </ul>
+    </div>
+    <div class="xt-hero-art reveal">
+      <img class="xt-hero-phones" src="assets/img/flory-hero.webp" alt="Flory app screens on phones" width="760" height="887">
+    </div>
+  </section>
 
-  <div class="row" style="--rt:56px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:31px;font-size:21.3333px;line-height:1.26">Click <a href="https://www.figma.com/proto/oINSel2I48gQGN1dYapnH7/Flory?type=design&node-id=164-9685&t=fVbRaaP8MrWE966J-1&scaling=scale-down&page-id=49%3A4&starting-point-node-id=164%3A9660&show-proto-sidebar=1&mode=design" target="_blank" rel="noopener"><span style="color:rgb(35, 207, 70)">here</span></a> to navigate the Figma prototype.</p>
-  </div>
+  <dl class="xt-facts reveal">
+    <div><dt>Duration</dt><dd>3 weeks</dd></div>
+    <div><dt>My role</dt><dd>UX and UI designer and UX researcher</dd></div>
+    <div><dt>Responsibilities</dt><dd>User research, wireframing, prototyping</dd></div>
+    <div><dt>Audience</dt><dd>Shoppers and plant enthusiasts</dd></div>
+  </dl>
 
-  <div class="row" style="--rt:55px">
-    <div class="cell embed c" style="--w:calc(896 * var(--u));--h:calc(532.63 * var(--u))"><iframe src="https://docs.google.com/presentation/d/1qd7gG80srPg3V5XIPfJGPGfgH6xw9-lO92m12M1rzBU/embed" title="Flory — presentation" allowfullscreen loading="lazy"></iframe></div>
-  </div>
+  <!-- ===== Overview ===== -->
+  <section class="xt-section" id="overview" aria-labelledby="overview-title">
+    <header class="xt-head">
+      <p class="xt-kicker">01 · Overview</p>
+      <h2 id="overview-title">Project overview</h2>
+    </header>
 
-  <div class="page-end" style="--h:58px"></div>
+    <div class="xt-cards">
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg></span>
+        <h3>The product</h3>
+        <p>People are able to order plants in this app and have them delivered to their home. The app has information about different plants and a forum section.</p>
+      </article>
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 1 21h22L12 2zm1 15h-2v-2h2v2zm0-4h-2V9h2v4z"/></svg></span>
+        <h3>The problem</h3>
+        <p>Trust in an app to deliver plants. Needs to be simple enough for older people with limited tech abilities.</p>
+      </article>
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 17.27 6.18 3.73-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></span>
+        <h3>The goal</h3>
+        <p>Make a simple looking but modern app where busy people can simply buy plants fast but with the possibility for other people to also learn about plants and chat with other plant enthusiasts.</p>
+      </article>
+    </div>
+
+    <div class="xt-quote reveal">
+      <p class="xt-mini">Goal statement</p>
+      <p>Our <strong>Flory app</strong> will let users <strong>buy and learn about plants and flowers</strong>, which will affect <strong>shoppers and plant enthusiasts</strong> by <strong>creating a platform that allows fast purchase and an immersive experience</strong> for those who wish.</p>
+      <p class="xt-quote-note">We will measure effectiveness by the number of sales and chat/forum active users.</p>
+    </div>
+  </section>
+
+  <!-- ===== Research ===== -->
+  <section class="xt-section" id="research" aria-labelledby="research-title">
+    <header class="xt-head">
+      <p class="xt-kicker">02 · Understanding the user</p>
+      <h2 id="research-title">User research</h2>
+    </header>
+
+    <p class="xt-intro reveal">I collected data through interviews and surveys and was able to establish what possible users would want from this app, created a persona based on the data and was able to identify how the app should work and look.</p>
+
+    <div class="xt-cards">
+      <article class="xt-card reveal">
+        <p class="xt-mini">1 · Interview goals</p>
+        <p>Finding out what kind of plants people are more interested in, how they take care of them and if they would trust the app.</p>
+      </article>
+      <article class="xt-card reveal">
+        <p class="xt-mini">2 · Target</p>
+        <p>People interested in plants. It is for everyone, but there are 2 main targets:</p>
+        <ul class="xt-points">
+          <li>Young people around 25–35 years old, preferably living away from their parents</li>
+          <li>Older women, retired, that like plants, gardens and TV shows about gardening or houses like H&amp;H</li>
+        </ul>
+      </article>
+      <article class="xt-card reveal">
+        <p class="xt-mini">3 · Questions</p>
+        <ol class="xt-qs">
+          <li>What kind of plants do you like?</li>
+          <li>Would you trust a delivery system to deliver you quality plants?</li>
+          <li>Would you trust the app more if you could see pictures of the actual plant you are buying (not a representation) or is this unnecessary?</li>
+          <li>Are you interested in rare plants?</li>
+          <li>How important are plants in your life?</li>
+          <li>Do you usually take care of plants constantly or do you prefer plants that are more resistant and require less care?</li>
+          <li>Where do you cultivate your plants?</li>
+        </ol>
+      </article>
+    </div>
+
+    <h3 class="xt-subhead">Pain points</h3>
+    <ol class="xt-pains">
+      <li class="reveal"><span>1</span><h4>Buy/Forum integration</h4><p>There are websites to buy flowers and forums about flowers, but there isn’t an app with both together.</p></li>
+      <li class="reveal"><span>2</span><h4>Simple navigation</h4><p>A lot of users, like one of our personas, are not so tech savvy and they need an easy to understand platform.</p></li>
+      <li class="reveal"><span>3</span><h4>Product availability</h4><p>We need to incentivize sellers to keep updating their products. We need to market the app to attract new buyers to these sellers.</p></li>
+      <li class="reveal"><span>4</span><h4>Easy to access products</h4><p>Offers and recommendations at the top of the homepage can help users that just want to buy a new plant without having to browse and waste time.</p></li>
+    </ol>
+
+    <h3 class="xt-subhead">Personas</h3>
+    <div class="xt-personas">
+      <article class="xt-persona reveal">
+        <div class="xt-persona-head">
+          <img src="assets/img/flory-persona-beth.webp" alt="Illustration of Beth" width="440" height="440" loading="lazy">
+          <div>
+            <h4>Beth</h4>
+            <p class="xt-persona-role">Retired psychologist and plant enthusiast</p>
+          </div>
+        </div>
+        <blockquote>“Plants makes my home feel more alive”</blockquote>
+        <dl class="xt-bio">
+          <div><dt>Age</dt><dd>58</dd></div>
+          <div><dt>Education</dt><dd>B.S in psychology</dd></div>
+          <div><dt>Hometown</dt><dd>Cleveland, OH</dd></div>
+          <div><dt>Family</dt><dd>Married. 2 sons.</dd></div>
+          <div><dt>Occupation</dt><dd>Retired</dd></div>
+        </dl>
+        <div class="xt-gf">
+          <div><p class="xt-mini">Goals</p><ul class="xt-points"><li>Find new plants for her house. Real pictures.</li><li>A lot of options to browse, learn and pass time</li><li>Deliver to her house</li></ul></div>
+          <div><p class="xt-mini">Frustrations</p><ul class="xt-points xt-minus"><li>Only finding the same plants in the market</li><li>Not having other people to talk about plants</li></ul></div>
+        </div>
+        <p class="xt-story">Her sons are 28 and 32, they moved out of her house and they live with their significant others. She loves and supports her sons, but she feels the house is empty after they left. Her husband still works part-time by choice, she is alone all of the afternoon and her husband doesn’t care as much as her about plants. Plants keep her busy, happier, she takes good care of them and would like a platform to buy, see and talk about plants.</p>
+        <p class="xt-problem"><span class="xt-mini">Problem statement</span>Beth is a retired psychologist and plant enthusiast who needs a platform to talk about plants, learn, buy and have it delivered to her because plants keep her busy and happy when she is alone at home.</p>
+      </article>
+
+      <article class="xt-persona reveal">
+        <div class="xt-persona-head">
+          <img src="assets/img/flory-persona-gloria.webp" alt="Illustration of Gloria" width="440" height="440" loading="lazy">
+          <div>
+            <h4>Gloria</h4>
+            <p class="xt-persona-role">Student and tattoo artist who rents an apartment with a roommate</p>
+          </div>
+        </div>
+        <blockquote>“Plants makes the small apartment I’m renting feel more like home to me”</blockquote>
+        <dl class="xt-bio">
+          <div><dt>Age</dt><dd>27</dd></div>
+          <div><dt>Education</dt><dd>College, Biology</dd></div>
+          <div><dt>Hometown</dt><dd>Los Angeles, CA</dd></div>
+          <div><dt>Family</dt><dd>Dating, not married</dd></div>
+          <div><dt>Occupation</dt><dd>Student and tattoo artist</dd></div>
+        </dl>
+        <div class="xt-gf">
+          <div><p class="xt-mini">Goals</p><ul class="xt-points"><li>Find new plants for her house</li><li>Fast and easy</li><li>Deliver to her house</li><li>Low maintenance plants</li></ul></div>
+          <div><p class="xt-mini">Frustrations</p><ul class="xt-points xt-minus"><li>Having to go to a store to buy plants</li><li>Not having time to take care of complex plants</li></ul></div>
+        </div>
+        <p class="xt-story">She is studying biology to become a teacher in the future. She goes to school in the mornings and some afternoons. She works as a tattoo artist some afternoons, a few nights a week and during the weekends. She lives with a busy roommate and she is also too busy to take care of complex plants, she likes plants that don’t require too much water or too much sun because her apartment doesn’t have a balcony.</p>
+        <p class="xt-problem"><span class="xt-mini">Problem statement</span>Gloria is a student and tattoo artist who rents an apartment with a roommate and needs a fast and simple app to buy plants because plants make her apartment feel more like home and she is too busy to go to a store.</p>
+      </article>
+    </div>
+
+    <h3 class="xt-subhead">User journey maps</h3>
+    <div class="xt-maps">
+      <figure class="xt-light reveal">
+        <a href="assets/img/flory-journey-beth.webp" target="_blank" rel="noopener" aria-label="Open the journey map for Beth in a new tab"><img src="assets/img/flory-journey-beth.webp" alt="User journey map for Beth" width="1207" height="681" loading="lazy"></a>
+        <figcaption>Beth · Goal: find a new plant and make sure it looks good before buying</figcaption>
+      </figure>
+      <figure class="xt-light reveal">
+        <a href="assets/img/flory-journey-gloria.webp" target="_blank" rel="noopener" aria-label="Open the journey map for Gloria in a new tab"><img src="assets/img/flory-journey-gloria.webp" alt="User journey map for Gloria" width="1219" height="677" loading="lazy"></a>
+        <figcaption>Gloria · Goal: find a new plant fast, without having to go through many screens, and have it delivered</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Design ===== -->
+  <section class="xt-section" id="design" aria-labelledby="design-title">
+    <header class="xt-head">
+      <p class="xt-kicker">03 · Starting the design</p>
+      <h2 id="design-title">From flows to a prototype</h2>
+      <ul class="xt-chips" aria-label="Steps">
+        <li>User task flow</li>
+        <li>Paper wireframes</li>
+        <li>Digital wireframes</li>
+        <li>Low-fidelity prototype</li>
+        <li>Usability studies</li>
+      </ul>
+    </header>
+
+    <h3 class="xt-subhead xt-subhead-first">User task flow</h3>
+    <figure class="xt-light xt-flow reveal">
+      <a href="assets/img/flory-task-flow.webp" target="_blank" rel="noopener" aria-label="Open the user task flow in a new tab"><img src="assets/img/flory-task-flow.webp" alt="User task flow: from opening the app to browsing, buying, the forum and the chat" width="1507" height="872" loading="lazy"></a>
+    </figure>
+
+    <div class="xt-work">
+      <div class="xt-detail">
+        <figure class="xt-shot reveal"><img src="assets/img/flory-paper.webp" alt="Paper wireframes" width="650" height="550" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p class="xt-num">I <span class="xt-tag">Paper wireframes</span></p>
+          <p>Taking time to draft a paper wireframe ensured that elements that made it to the digital wireframe were well defined and well suited to address users’ pain points and expectations.</p>
+        </div>
+      </div>
+      <div class="xt-detail xt-flip">
+        <figure class="xt-shot xt-shot-tall reveal"><img src="assets/img/flory-wire-home.webp" alt="Digital wireframe of the homepage" width="424" height="828" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p class="xt-num">II <span class="xt-tag">Digital wireframes</span></p>
+          <p>In the homepage, according to the personas’ needs, we have at the top a fast purchase option and at the bottom an integration to the forum, where plant and flower enthusiasts can spend time and learn new things.</p>
+          <p>At the top we have featured offers, recommendations and the option to browse all products. Here we market some of our services and below it’s the featured forum post.</p>
+        </div>
+      </div>
+      <div class="xt-detail">
+        <figure class="xt-shot xt-shot-tall reveal"><img src="assets/img/flory-wire-forum.webp" alt="Digital wireframe of the forum page" width="427" height="827" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p class="xt-num">II <span class="xt-tag">Digital wireframes</span></p>
+          <p>This is the forum page, where plant and flower enthusiasts can share their history, tips, their gardens, recommendations, etc.</p>
+          <p>The forum has a featured post at the top, followed by the most liked posts and below that the newest. Down here we have a fixed new post button. Posts can be liked, commented and shared. You can also attach images.</p>
+        </div>
+      </div>
+      <div class="xt-detail xt-flip">
+        <figure class="xt-shot reveal"><img src="assets/img/flory-lofi.webp" alt="Low-fidelity prototype connecting all screens" width="1088" height="828" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p class="xt-num">III <span class="xt-tag">Low-fidelity prototype</span></p>
+          <p>The homepage presents two main paths: the shop and the forum. After a purchase the user can track through their purchase history. This lo-fi prototype provides the general idea of the user flow.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="xt-subhead">Usability study findings</h3>
+    <div class="xt-cards xt-cards-2">
+      <article class="xt-card reveal">
+        <p class="xt-mini">Round 1</p>
+        <ol class="xt-numlist">
+          <li>Some users want a way to share pictures without the forum</li>
+          <li>A chat to talk directly to other users</li>
+        </ol>
+      </article>
+      <article class="xt-card reveal">
+        <p class="xt-mini">Round 2</p>
+        <ol class="xt-numlist">
+          <li>Make browse option more visible</li>
+          <li>Change forum icon</li>
+          <li>User flow is good and users’ tones were positive</li>
+        </ol>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Refining ===== -->
+  <section class="xt-section" id="refining" aria-labelledby="refining-title">
+    <header class="xt-head">
+      <p class="xt-kicker">04 · Refining the design</p>
+      <h2 id="refining-title">Mockups after the usability study</h2>
+    </header>
+
+    <div class="xt-ba-block">
+      <div class="xt-copy reveal">
+        <h3 class="xt-sub">Highlights</h3>
+        <p>A new highlight page was added. In this page people can post pictures that last 24 hours. There is a random (for you) page and a following page where users can watch others’ highlights. People can now choose a permanent forum post or a temporary picture.</p>
+      </div>
+      <div class="xt-ba reveal">
+        <figure><img src="assets/img/flory-ba-forum.webp" alt="Forum screen before the usability study" width="407" height="819" loading="lazy"><figcaption>Before usability study</figcaption></figure>
+        <figure><img src="assets/img/flory-ba-highlights.webp" alt="Highlights screen after the usability study" width="407" height="819" loading="lazy"><figcaption>After usability study</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="xt-ba-block xt-flip">
+      <div class="xt-copy reveal">
+        <h3 class="xt-sub">Chat</h3>
+        <p>We added a chat where people can communicate directly. Before, people could only communicate via the forum. Now there are both options.</p>
+      </div>
+      <div class="xt-ba reveal">
+        <figure><img src="assets/img/flory-ba-chat-before.webp" alt="Forum screen before the usability study" width="407" height="818" loading="lazy"><figcaption>Before usability study</figcaption></figure>
+        <figure><img src="assets/img/flory-ba-chat-after.webp" alt="Chat screen after the usability study" width="407" height="819" loading="lazy"><figcaption>After usability study</figcaption></figure>
+      </div>
+    </div>
+
+    <h3 class="xt-subhead">Mockups</h3>
+    <ul class="xt-gallery reveal" aria-label="Final mockups">
+      <li><img src="assets/img/flory-mock-1.webp" alt="Homepage mockup with a featured offer" width="407" height="819" loading="lazy"></li>
+      <li><img src="assets/img/flory-mock-2.webp" alt="Browse all products mockup" width="407" height="819" loading="lazy"></li>
+      <li><img src="assets/img/flory-mock-3.webp" alt="All plants mockup" width="407" height="819" loading="lazy"></li>
+      <li><img src="assets/img/flory-mock-4.webp" alt="Product detail mockup" width="407" height="819" loading="lazy"></li>
+    </ul>
+
+    <h3 class="xt-subhead">High-fidelity prototype</h3>
+    <figure class="xt-light xt-proto reveal">
+      <img src="assets/img/flory-proto.webp" alt="Overview of the high-fidelity prototype screens" width="1325" height="500" loading="lazy">
+    </figure>
+    <p class="xt-btnrow"><a class="btn btn-primary" href="https://www.figma.com/proto/oINSel2I48gQGN1dYapnH7/Flory?type=design&amp;node-id=164-9685&amp;t=fVbRaaP8MrWE966J-1&amp;scaling=scale-down&amp;page-id=49%3A4&amp;starting-point-node-id=164%3A9660&amp;show-proto-sidebar=1&amp;mode=design" target="_blank" rel="noopener">Check the prototype<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></p>
+
+    <h3 class="xt-subhead">Accessibility considerations</h3>
+    <ol class="xt-pains xt-pains-3">
+      <li class="reveal"><span>1</span><p>Easy to spot buttons in contrast to negative space and different motions for the same task.</p></li>
+      <li class="reveal"><span>2</span><p>An accessibility page in the configurations where people are able to apply a high contrast option and screen reader.</p></li>
+      <li class="reveal"><span>3</span><p>A “help” page where users can get in touch with Flory’s staff, ask for guidance or ask questions.</p></li>
+    </ol>
+  </section>
+
+  <!-- ===== Takeaways ===== -->
+  <section class="xt-section" id="takeaways" aria-labelledby="takeaways-title">
+    <header class="xt-head">
+      <p class="xt-kicker">05 · Going forward</p>
+      <h2 id="takeaways-title">Takeaways and next steps</h2>
+    </header>
+
+    <div class="xt-cards xt-cards-2">
+      <article class="xt-card reveal">
+        <p class="xt-mini">Impact</p>
+        <p>The feedback on this app is positive, many people showed interest in using it and want it to be developed into a usable app.</p>
+      </article>
+      <article class="xt-card reveal">
+        <p class="xt-mini">What I learned</p>
+        <p>I learned to conduct usability research, how to create personas, goals and problem statements, user tasks, user flow and how to consider and implement these concepts in the design.</p>
+      </article>
+    </div>
+
+    <h3 class="xt-subhead">Next steps</h3>
+    <ol class="xt-pains xt-pains-3">
+      <li class="reveal"><span>1</span><p>Talk with developers and receive feedback about how well the front-end team would be able to code this design.</p></li>
+      <li class="reveal"><span>2</span><p>Talk with possible sellers and find out if they would like to upload their products in the app and if they would need other incentives besides more sales.</p></li>
+      <li class="reveal"><span>3</span><p>Conduct research to find out if users would be interested in having Flory working on desktop computers.</p></li>
+    </ol>
+  </section>
+
+  <!-- ===== Presentation ===== -->
+  <section class="xt-section xt-sep" id="presentation" aria-labelledby="presentation-title">
+    <header class="xt-head">
+      <p class="xt-kicker">06 · Full case study</p>
+      <h2 id="presentation-title">The presentation</h2>
+    </header>
+    <div class="xt-embed reveal">
+      <iframe src="https://docs.google.com/presentation/d/1qd7gG80srPg3V5XIPfJGPGfgH6xw9-lO92m12M1rzBU/embed" title="Flory: case study presentation" allowfullscreen loading="lazy"></iframe>
+    </div>
+  </section>
+
   <nav class="case-nav" aria-label="Project navigation">
     <a class="prev" href="ux-analyzer.html"><small>Previous project</small><span>← UX Analyzer</span></a>
     <a class="next" href="style-guide.html"><small>Next project</small><span>Style Guide →</span></a>
