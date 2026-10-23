@@ -2,7 +2,10 @@ document.documentElement.classList.add('js');
 
 // Header background on scroll
 const header = document.querySelector('.site-header');
-const onScroll = () => header.classList.toggle('is-solid', window.scrollY > 8);
+const onScroll = () => {
+  header.classList.toggle('is-solid', window.scrollY > 8);
+  document.documentElement.classList.toggle('is-scrolled', window.scrollY > 40);
+};
 onScroll();
 window.addEventListener('scroll', onScroll, { passive: true });
 
@@ -90,3 +93,16 @@ if (document.querySelector('.hero')) {
   }
 }
 document.querySelectorAll('.btn-back').forEach((a) => a.addEventListener('click', () => store.set(RESTORE_KEY, '1')));
+
+// Logo wall: start the staggered entrance when it scrolls into view
+const wall = document.querySelector('[data-wall]');
+if (wall) {
+  if ('IntersectionObserver' in window) {
+    const wio = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { wall.classList.add('in'); wio.disconnect(); }
+    }, { threshold: 0.2 });
+    wio.observe(wall);
+  } else {
+    wall.classList.add('in');
+  }
+}
