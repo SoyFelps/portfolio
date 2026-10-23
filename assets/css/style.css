@@ -714,3 +714,14 @@ main { animation: fade .4s ease; }
   transition: opacity .55s ease, transform .55s ease, background-color .6s cubic-bezier(.22, .61, .36, 1);
   transition-delay: calc(var(--i) * 60ms), calc(var(--i) * 60ms), 0s;
 }
+
+/* Highlights: tighter vertical rhythm inside each project card */
+.project h3 { margin-top: 16px; }
+.project p { margin-top: 14px; }
+.project .btn { margin-top: 28px; }
+.project { margin-bottom: 104px; }
+.projects { padding-bottom: 40px; }
+
+/* Testimonials: separated from Highlights by a hairline; same 104px rhythm as the cards above */
+.projects { padding-bottom: 0; }
+.testimonials { padding-top: 61px; }
