@@ -797,3 +797,29 @@ main { animation: fade .4s ease; }
 }
 footer.site-footer { text-align: left; padding: 56px 0 28px; font: 400 15px/1.6 var(--font); }
 @media (max-width: 700px) { footer.site-footer { padding-top: 40px; } }
+
+
+/* XippTech > Avus: brief overview and the clients I worked with */
+.avus-extra h3 { margin: 0; font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); line-height: 1.4; }
+.avus-extra .points { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.avus-extra .points li { position: relative; padding-left: 22px; font-size: 16px; line-height: 1.5; }
+.avus-extra .points li::before { content: ""; position: absolute; left: 0; top: .72em; width: 10px; height: 2px; background: var(--accent); }
+.avus-extra .avus-clients-title { margin-top: 28px; }
+.avus-logos { list-style: none; margin: 12px 0 0; padding: 0; display: flex; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.avus-logos li { flex: 1; display: flex; align-items: center; justify-content: center; height: 84px; border-left: 1px solid var(--line); }
+.avus-logos li:first-child { border-left: 0; }
+.avus-logos img { width: auto; height: auto; max-width: 100px; max-height: 44px; object-fit: contain; }
+.avus-extra .avus-links { margin-top: 14px; font-size: 14px; line-height: 1.5; color: var(--muted); }
+.avus-extra .avus-links a { color: var(--accent); text-underline-offset: 3px; }
+@media (max-width: 700px) {
+  .avus-extra .points li { font-size: 15px; }
+}
+
+/* Home logo wall: a linked logo fills its whole cell */
+.logo-wall .clients li a { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+/* XippTech > Avus: heading, text and overview flow in one column so they never overlap */
+.avus-copy h2 { margin: 0; font-size: 40px; font-weight: 700; line-height: 1.2; }
+.avus-copy > p { margin: 28px 0 0; }
+.avus-copy .avus-extra { margin-top: 28px; }
+@media (max-width: 700px) { .avus-copy h2 { font-size: 32px; } }

@@ -127,3 +127,49 @@ document.querySelectorAll('[data-copy]').forEach((btn) => {
     setTimeout(() => { if (label) label.textContent = 'Copy'; btn.classList.remove('is-copied'); }, 2000);
   });
 });
+
+// Landing on a #section link: jump there instantly (smooth scrolling gets cut short while the page lays out)
+window.addEventListener('load', () => {
+  if (!location.hash || location.hash.length < 2) return;
+  let el = null;
+  try { el = document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch (e) {}
+  if (!el) return;
+  const root = document.documentElement;
+  root.style.scrollBehavior = 'auto';
+  el.scrollIntoView();
+  requestAnimationFrame(() => { root.style.scrollBehavior = ''; });
+});
+
+// Generated pages place text in columns with fixed offsets; when text wraps to more lines than the original
+// design (narrower window, different font metrics) it would run into the block below, so push those blocks down.
+(function () {
+  const rows = document.querySelectorAll('.page .row');
+  if (!rows.length) return;
+  const GAP = 16;
+  function fit() {
+    const narrow = window.matchMedia('(max-width: 700px)').matches;
+    rows.forEach((row) => {
+      const cells = Array.from(row.children).filter((c) => c.classList.contains('cell'));
+      cells.forEach((c) => { c.style.marginTop = ''; });
+      if (narrow) return;
+      cells.forEach((cell, i) => {
+        let shift = 0;
+        for (let j = 0; j < i; j++) {
+          const prev = cells[j];
+          if (prev.tagName === 'HR' || cell.tagName === 'HR') continue;
+          const overlapX = cell.offsetLeft < prev.offsetLeft + prev.offsetWidth - 1 && prev.offsetLeft < cell.offsetLeft + cell.offsetWidth - 1;
+          if (!overlapX || cell.offsetTop + cell.offsetHeight <= prev.offsetTop) continue; // skip blocks that sit entirely above
+          const need = prev.offsetTop + prev.offsetHeight + GAP - cell.offsetTop;
+          if (need > shift) shift = need;
+        }
+        if (shift > 0) cell.style.marginTop = 'calc(var(--mt, 0px) + ' + Math.ceil(shift) + 'px)';
+      });
+    });
+  }
+  let t;
+  const later = () => { clearTimeout(t); t = setTimeout(fit, 60); };
+  window.addEventListener('resize', later);
+  window.addEventListener('load', fit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+  fit();
+})();
