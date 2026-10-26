@@ -173,3 +173,15 @@ window.addEventListener('load', () => {
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
   fit();
 })();
+
+// Accordion (home: older projects)
+document.querySelectorAll('[data-accordion]').forEach((root) => {
+  const btn = root.querySelector('[aria-controls]');
+  const panel = btn && document.getElementById(btn.getAttribute('aria-controls'));
+  if (!btn || !panel) return;
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', String(open));
+    panel.classList.toggle('is-open', open);
+  });
+});
