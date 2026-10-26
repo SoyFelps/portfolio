@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/xipptech.css">
 </head>
 <body>
 
@@ -49,86 +50,127 @@
   </div>
 </div>
 
-<main class="page" id="main">
+<main class="xt" id="main">
 
-  <div class="row" style="--rt:24px">
-    <div class="cell reveal" style="--w:calc(130.44 * var(--u));--ml:calc(383.17 * var(--u))"><img src="assets/img/ux-analyzer-01.webp" alt="UX Analyzer — preview 1" width="168" height="187" loading="lazy"></div>
-    <a class="btn btn-back cell" href="index.html" style="--w:calc(130.44 * var(--u));--ml:calc(-514 * var(--u));--mt:40px"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
-  </div>
+  <!-- ===== Hero ===== -->
+  <section class="xt-hero" aria-labelledby="xt-title">
+    <div class="xt-hero-copy">
+      <a class="btn btn-back" href="index.html"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
+      <h1 id="xt-title">UX Analyzer</h1>
+      <p class="xt-lead">UX Analyzer is a fully functional web app that analyses user interfaces using specialised algorithms and artificial intelligence.</p>
+      <p class="xt-btnrow"><a class="btn btn-primary" href="https://dock-curl-32757804.figma.site/" target="_blank" rel="noopener">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></p>
+      <ul class="xt-jump" aria-label="Jump to a section">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#heat-map-section">Heat map</a></li>
+      </ul>
+    </div>
+    <div class="xt-hero-art reveal">
+      <img src="assets/img/ux-analyzer-02.webp" alt="UX Analyzer landing page and analysis screens" width="1280" height="742">
+    </div>
+  </section>
 
-  <div class="row" style="--rt:144px">
-    <h1 class="cell c" style="--w:calc(883.58 * var(--u));--h:60px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">UX Analyzer</h1>
-  </div>
+    <!-- ===== Overview ===== -->
+  <section class="xt-section" id="overview" aria-labelledby="overview-title">
+    <header class="xt-head">
+      <p class="xt-kicker">01 · Overview</p>
+      <h2 id="overview-title">What it does</h2>
+    </header>
 
-  <div class="row" style="--rt:64px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:28px;font-size:14.6667px;font-weight:500;line-height:1.909"><span style="color:rgb(243, 243, 243);font-size:18.6667px">Website: </span><a href="https://dock-curl-32757804.figma.site/" target="_blank" rel="noopener">UX Analyzer</a></p>
-  </div>
+    <div class="xt-cards">
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9.5 3.5l1.55 4.45a3 3 0 0 0 1.9 1.9l4.45 1.55-4.45 1.55a3 3 0 0 0-1.9 1.9L9.5 18.8 7.95 14.35a3 3 0 0 0-1.9-1.9L1.6 10.9l4.45-1.55a3 3 0 0 0 1.9-1.9L9.5 3.5zM18.5 2l.75 2.25a1.6 1.6 0 0 0 1 1L22.5 6l-2.25.75a1.6 1.6 0 0 0-1 1L18.5 10l-.75-2.25a1.6 1.6 0 0 0-1-1L14.5 6l2.25-.75a1.6 1.6 0 0 0 1-1L18.5 2z"/></svg></span>
+        <h3>Analysis</h3>
+        <p>It evaluates UI and UX best practices, including spacing, contrast, hierarchy, interactive elements, and accessibility.</p>
+      </article>
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></span>
+        <h3>Heatmap</h3>
+        <p>The platform features a heatmap that simulates human visual attention and highlights the areas of the screen that are most likely to attract the user’s attention.</p>
+      </article>
+      <article class="xt-card reveal">
+        <span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5.25 3.4 10.15 8 11.35 4.6-1.2 8-6.1 8-11.35V5l-8-3zm-1 14-4-4 1.41-1.41L11 13.17l4.59-4.58L17 10l-6 6z"/></svg></span>
+        <h3>Built in Figma</h3>
+        <p>The web app was built entirely using Figma and Figma Make. By applying usability best practices to both the landing page and the analysis interface, the user is guided through an intuitive and user-friendly workflow.</p>
+      </article>
+    </div>
+  </section>
 
-  <div class="row" style="--rt:56px">
-    <div class="cell reveal" style="--w:calc(513.22 * var(--u));--ml:calc(383.17 * var(--u))"><img src="assets/img/ux-analyzer-02.webp" alt="UX Analyzer — preview 2" width="661" height="383" loading="lazy"></div>
-    <p class="cell" style="--w:calc(351.72 * var(--u));--ml:calc(-892.12 * var(--u));--mt:8px;--h:168px">UX Analyzer is a fully functional web app that analyses user interfaces using specialised algorithms and artificial intelligence to evaluate UI and UX best practices, including spacing, contrast, hierarchy, interactive elements, and accessibility.</p>
-    <p class="cell" style="--w:calc(351.72 * var(--u));--ml:calc(-351.72 * var(--u));--mt:192px;--h:112px">In addition, the platform features a heatmap that simulates human visual attention and highlights the areas of the screen that are most likely to attract the user’s attention.</p>
-  </div>
+  <!-- ===== How it works ===== -->
+  <section class="xt-section" id="how-it-works" aria-labelledby="how-title">
+    <header class="xt-head">
+      <p class="xt-kicker">02 · How does it work?</p>
+      <h2 id="how-title">From upload to score</h2>
+    </header>
 
-  <div class="row" style="--rt:56px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:56px">The web app was built entirely using Figma and Figma Make. By applying usability best practices to both the landing page and the analysis interface, the user is guided through an intuitive and user-friendly workflow.</p>
-  </div>
+    <div class="xt-work">
+      <article class="xt-product">
+        <figure class="xt-shot reveal">
+          <img src="assets/img/ux-analyzer-03.webp" alt="Upload screen" width="732" height="669" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p class="xt-num">I <span class="xt-tag">Upload</span></p>
+          <h3>Upload a screen</h3>
+          <p>The user uploads the screen they want to analyse.</p>
+        </div>
+      </article>
+      <div class="xt-detail xt-flip">
+        <figure class="xt-shot reveal"><img src="assets/img/ux-analyzer-04.webp" alt="Analysis screen with the uploaded interface" width="1280" height="727" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p class="xt-num">II <span class="xt-tag">Review</span></p>
+          <p>They are then taken to the analysis screen to review the uploaded image.</p>
+        </div>
+      </div>
+      <div class="xt-detail">
+        <figure class="xt-shot xt-shot-tall reveal"><img src="assets/img/ux-analyzer-05.webp" alt="Analysis results with an overall score and category evaluations" width="1060" height="1078" loading="lazy"></figure>
+        <div class="xt-copy">
+          <p class="xt-num">III <span class="xt-tag">Results</span></p>
+          <p>After clicking “Start Analysis”, the application displays an overall score for the screen, followed by an individual evaluation of each analysed category.</p>
+          <p>UX Analyzer evaluates colour combinations, element distribution and spacing, prominent elements such as CTA buttons, and visual accessibility considerations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <div class="row" style="--rt:41px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
+  <!-- ===== Heat map ===== -->
+  <section class="xt-section" id="heat-map-section" aria-labelledby="heat-map">
+    <header class="xt-head">
+      <p class="xt-kicker">03 · Human visual attention simulation</p>
+      <h2 id="heat-map">Heat Map</h2>
+    </header>
 
-  <div class="row" style="--rt:40px">
-    <h3 class="cell c" style="--w:calc(883.58 * var(--u));--h:36px;font-size:24px;font-weight:700;position:relative;top:4px;line-height:1.167">How does it work?</h3>
-  </div>
+    <div class="xt-work">
+      <article class="xt-product xt-flip">
+        <figure class="xt-shot reveal">
+          <img src="assets/img/ux-analyzer-06.webp" alt="Heat map over a website screen" width="1255" height="725" loading="lazy">
+        </figure>
+        <div class="xt-copy">
+          <p>The heatmap simulates human visual attention and helps designers identify which elements on the screen are most likely to attract the user’s attention.</p>
+        </div>
+      </article>
+    </div>
+  </section>
 
-  <div class="row" style="--rt:56px">
-    <div class="cell reveal" style="--w:calc(283.4 * var(--u));--ml:calc(76.48 * var(--u))"><img src="assets/img/ux-analyzer-03.webp" alt="UX Analyzer — preview 3" width="365" height="334" loading="lazy"></div>
-    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(99.38 * var(--u))"><img src="assets/img/ux-analyzer-04.webp" alt="UX Analyzer — preview 4" width="562" height="319" loading="lazy"></div>
-  </div>
+  <!-- ===== Who it is for ===== -->
+  <section class="xt-section xt-sep" id="audience" aria-labelledby="audience-title">
+    <header class="xt-head">
+      <p class="xt-kicker">04 · Who it’s for</p>
+      <h2 id="audience-title">For designers at every level</h2>
+    </header>
 
-  <div class="row" style="--rt:0px">
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(465.47 * var(--u));--h:56px;font-weight:500">They are then taken to the analysis screen to review the uploaded image.</p>
-    <p class="cell" style="--w:calc(270.97 * var(--u));--ml:calc(-806.71 * var(--u));--mt:14px;--h:56px;font-weight:500">The user uploads the screen they want to analyse.</p>
-  </div>
+    <div class="xt-cards xt-cards-2">
+      <article class="xt-card reveal">
+        <h3>Creating intuitive interfaces</h3>
+        <p>The product is designed to make it easier to create intuitive interfaces for both experienced designers and beginners who are still learning the fundamental concepts of UI and UX.</p>
+      </article>
+      <article class="xt-card reveal">
+        <h3>Presentations</h3>
+        <p>UX Analyzer can also be used for presentations, helping designers demonstrate to clients why a particular interface works or where it may fall short. It provides a practical visualisation of how a user who is not familiar with the research and planning behind the interface may perceive and interact with its elements.</p>
+      </article>
+    </div>
+    <p class="xt-btnrow"><a class="btn btn-primary" href="https://dock-curl-32757804.figma.site/" target="_blank" rel="noopener">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></p>
+  </section>
 
-  <div class="row" style="--rt:62px">
-    <div class="cell reveal" style="--w:calc(513.22 * var(--u));--ml:calc(76.48 * var(--u))"><img src="assets/img/ux-analyzer-05.webp" alt="UX Analyzer — preview 5" width="661" height="672" loading="lazy"></div>
-    <p class="cell" style="--w:calc(270.97 * var(--u));--ml:calc(29.5 * var(--u));--mt:54px;--h:140px;font-weight:500">After clicking “Start Analysis”, the application displays an overall score for the screen, followed by an individual evaluation of each analysed category.</p>
-    <p class="cell" style="--w:calc(270.97 * var(--u));--ml:calc(-270.97 * var(--u));--mt:210px;--h:140px;font-weight:500">UX Analyzer evaluates colour combinations, element distribution and spacing, prominent elements such as CTA buttons, and visual accessibility considerations.</p>
-  </div>
-
-  <div class="row" style="--rt:121px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
-
-  <div class="row" style="--rt:40px">
-    <h3 class="cell c" style="--w:calc(883.58 * var(--u));--h:36px;font-size:24px;font-weight:700;position:relative;top:4px;line-height:1.167">Human Visual Attention Simulation</h3>
-  </div>
-
-  <div class="row" style="--rt:56px">
-    <div class="cell reveal" style="--w:calc(436.35 * var(--u));--ml:calc(-0.39 * var(--u))"><img src="assets/img/ux-analyzer-06.webp" alt="UX Analyzer — preview 6" width="562" height="325" loading="lazy"></div>
-    <h2 id="heat-map" class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(29.5 * var(--u));--mt:14px;--h:48px;font-size:40px;font-weight:700;line-height:normal;position:relative;top:5px">Heat Map</h2>
-    <p class="cell" style="--w:calc(423.93 * var(--u));--ml:calc(-423.93 * var(--u));--mt:90px;--h:84px">The heatmap simulates human visual attention and helps designers identify which elements on the screen are most likely to attract the user’s attention.</p>
-  </div>
-
-  <div class="row" style="--rt:121px">
-    <hr class="cell c" style="--w:calc(896 * var(--u))">
-  </div>
-
-  <div class="row" style="--rt:128px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:56px">The product is designed to make it easier to create intuitive interfaces for both experienced designers and beginners who are still learning the fundamental concepts of UI and UX.</p>
-  </div>
-
-  <div class="row" style="--rt:16px">
-    <p class="cell c" style="--w:calc(883.58 * var(--u));--h:84px">UX Analyzer can also be used for presentations, helping designers demonstrate to clients why a particular interface works or where it may fall short. It provides a practical visualisation of how a user who is not familiar with the research and planning behind the interface may perceive and interact with its elements.</p>
-  </div>
-
-  <div class="row" style="--rt:56px">
-    <a class="btn btn-primary cell c" href="https://dock-curl-32757804.figma.site/" target="_blank" rel="noopener" style="--w:calc(283.4 * var(--u))">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
-  </div>
-
-  <div class="page-end" style="--h:58px"></div>
   <nav class="case-nav" aria-label="Project navigation">
     <a class="prev" href="meurh360.html"><small>Previous project</small><span>← MeuRH360</span></a>
     <a class="next" href="flory-page.html"><small>Next project</small><span>Flory →</span></a>

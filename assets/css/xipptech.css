@@ -365,3 +365,7 @@
   .xt-ba, .xt-gallery { padding: 18px; }
   .xt-embed { padding: 8px; }
 }
+
+.xt-section > .xt-btnrow { margin-top: 32px !important; }
+
+.xt-detail .xt-copy > p.xt-num { margin-top: 0; font-size: 15px; line-height: 1.5; color: var(--accent); }
