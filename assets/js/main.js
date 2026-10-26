@@ -185,3 +185,14 @@ document.querySelectorAll('[data-accordion]').forEach((root) => {
     panel.classList.toggle('is-open', open);
   });
 });
+
+// Code accordions: each file opens on its own
+document.querySelectorAll('.code-acc-btn').forEach((btn) => {
+  const panel = document.getElementById(btn.getAttribute('aria-controls'));
+  if (!panel) return;
+  btn.addEventListener('click', () => {
+    const open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', String(open));
+    panel.classList.toggle('is-open', open);
+  });
+});

@@ -947,3 +947,27 @@ footer.site-footer { text-align: left; padding: 56px 0 28px; font: 400 15px/1.6 
   .older-name { font-size: 18px; }
 }
 @media (prefers-reduced-motion: reduce) { .older-card, .older-panel, .older-chevron, .older-go { transition: none; } }
+
+/* Code accordions (Mixzer, Echo UX): one collapsible block per source file */
+.code-accs { width: min(100% - 124px, var(--wrap)); margin: 48px auto 0; }
+.code-acc { border-bottom: 1px solid var(--line); }
+.code-acc:first-child { border-top: 1px solid var(--line); }
+.page .code-acc-title { margin: 0; font-size: 22px; line-height: 1.3; font-weight: 700; }
+.code-acc-btn { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; padding: 26px 12px; border: 0; background: transparent; color: var(--text-strong); font: inherit; text-align: left; cursor: pointer; transition: background-color .2s ease; }
+.code-acc-btn:hover { background: rgba(255, 255, 255, .04); }
+.code-acc-btn:focus-visible { outline: 2px solid var(--focus); outline-offset: -3px; }
+.code-acc-chevron { flex: none; width: 36px; height: 36px; padding: 8px; border: 1px solid rgba(255, 255, 255, .24); border-radius: 50%; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .25s ease, border-color .2s ease, color .2s ease; }
+.code-acc-btn:hover .code-acc-chevron { border-color: rgba(255, 255, 255, .55); }
+.code-acc-btn[aria-expanded="true"] .code-acc-chevron { transform: rotate(180deg); border-color: var(--accent); color: var(--accent); }
+.code-acc-panel { display: grid; grid-template-rows: 0fr; visibility: hidden; transition: grid-template-rows .35s ease, visibility 0s linear .35s; }
+.code-acc-panel.is-open { grid-template-rows: 1fr; visibility: visible; transition: grid-template-rows .35s ease, visibility 0s; }
+.code-acc-inner { overflow: hidden; min-height: 0; }
+.code-acc-pre { margin: 0 12px 28px; padding: 20px 22px; max-height: 520px; overflow: auto; border-radius: 14px; background: #1f2024; color: #d9dae0; font: 13px/1.65 ui-monospace, "SFMono-Regular", Consolas, monospace; tab-size: 4; white-space: pre; }
+.code-acc-pre:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+@media (max-width: 700px) {
+  .code-accs { width: min(100% - 32px, var(--wrap)); margin-top: 32px; }
+  .page .code-acc-title { font-size: 19px; }
+  .code-acc-btn { padding: 20px 6px; }
+  .code-acc-pre { margin: 0 6px 22px; padding: 16px; font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) { .code-acc-panel, .code-acc-chevron { transition: none; } }
