@@ -823,3 +823,40 @@ footer.site-footer { text-align: left; padding: 56px 0 28px; font: 400 15px/1.6 
 .avus-copy > p { margin: 28px 0 0; }
 .avus-copy .avus-extra { margin-top: 28px; }
 @media (max-width: 700px) { .avus-copy h2 { font-size: 32px; } }
+
+/* Home: Flory as a full case study, in its own section */
+.case-cta { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 56px; align-items: center; padding: 72px 0 104px; }
+.case-kicker { font-size: 13px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin: 0; }
+.case-cta .section-title { margin-top: 10px; }
+.case-text { margin-top: 20px; font-size: 18px; line-height: 1.65; color: var(--muted); max-width: 34em; }
+.case-cta .chips { margin-top: 24px; }
+.case-cta .btn { margin-top: 32px; }
+.case-cta-art { position: relative; isolation: isolate; display: grid; place-items: center; padding: 36px; border-radius: 28px; overflow: hidden; background: linear-gradient(160deg, #3a3b42 0%, var(--surface) 55%, #2f3036 100%); transition: transform .25s ease; }
+.case-cta-art::before { content: ""; position: absolute; width: 70%; aspect-ratio: 1; left: 15%; top: 10%; z-index: -1; border-radius: 50%; background: radial-gradient(closest-side, rgba(145, 255, 94, .16), rgba(145, 255, 94, 0)); }
+.case-cta-art:hover { transform: translateY(-4px); }
+.case-cta-art img { width: 100%; max-width: 300px; height: auto; filter: drop-shadow(0 24px 30px rgba(0, 0, 0, .4)); }
+@media (max-width: 860px) {
+  .case-cta { grid-template-columns: 1fr; gap: 32px; padding: 56px 0 72px; }
+  .case-cta-art { order: -1; padding: 24px; }
+  .case-cta-art img { max-width: 220px; }
+}
+@media (prefers-reduced-motion: reduce) { .case-cta-art { transition: none; } .case-cta-art:hover { transform: none; } }
+
+/* Home: the Flory design process, as a connected strip */
+.case-flow { grid-column: 1 / -1; list-style: none; margin: 24px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 56px; }
+.case-flow li { position: relative; }
+.case-flow a { display: block; text-decoration: none; color: var(--text); }
+.case-flow .tile { display: grid; place-items: center; height: 180px; padding: 14px; border-radius: 20px; overflow: hidden; background: linear-gradient(160deg, #3a3b42 0%, var(--surface) 60%, #2f3036 100%); transition: transform .25s ease, box-shadow .25s ease; }
+.case-flow .tile.light { background: #f4f5f7; }
+.case-flow .tile img { max-width: 100%; max-height: 152px; width: auto; height: auto; object-fit: contain; }
+.case-flow .tile:not(.light) img { filter: drop-shadow(0 14px 18px rgba(0, 0, 0, .4)); }
+.case-flow a:hover .tile { transform: translateY(-4px); box-shadow: 0 16px 28px rgba(0, 0, 0, .3); }
+.case-flow .step { display: block; margin-top: 10px; text-align: center; font-size: 13px; font-weight: 400; line-height: 1.3; color: var(--muted); }
+.case-flow li:not(:last-child)::after { content: ""; position: absolute; left: calc(100% + 8px); top: 90px; width: 40px; border-top: 2px dotted var(--accent); opacity: .75; }
+@media (max-width: 860px) {
+  .case-flow { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
+  .case-flow li::after { display: none; }
+  .case-flow .tile { height: 160px; }
+  .case-flow .tile img { max-height: 132px; }
+}
+@media (prefers-reduced-motion: reduce) { .case-flow .tile { transition: none; } .case-flow a:hover .tile { transform: none; } }
