@@ -369,3 +369,15 @@
 .xt-section > .xt-btnrow { margin-top: 32px !important; }
 
 .xt-detail .xt-copy > p.xt-num { margin-top: 0; font-size: 15px; line-height: 1.5; color: var(--accent); }
+
+/* AI Workflows: more air between the blocks of each prototype */
+.xt-airy .xt-work { padding-bottom: 56px; }
+.xt-airy .xt-work:last-child { padding-bottom: 0; }
+.xt-airy .xt-work .xt-product { padding: 56px 0 52px; }
+.xt-airy .xt-detail { padding: 52px 0; }
+.xt-airy .xt-shot-full { margin-top: 52px; }
+@media (max-width: 960px) {
+  .xt-airy .xt-work .xt-product { padding-bottom: 40px; }
+  .xt-airy .xt-detail { padding: 40px 0; }
+  .xt-airy .xt-shot-full { margin-top: 40px; }
+}

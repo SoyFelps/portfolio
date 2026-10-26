@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
 </head>
 <body>
 
@@ -129,7 +130,7 @@
   <section class="wrap case-cta" aria-labelledby="case-title">
     <div class="case-cta-copy reveal">
       <p class="case-kicker">Case study</p>
-      <h2 class="section-title" id="case-title">Want to see the full design process?</h2>
+      <h2 class="section-title" id="case-title">Want to see a full design process?</h2>
       <p class="case-text">Flory is a mobile app for ordering plants and flowers, with a forum where plant enthusiasts can share and learn. This case study walks through the research, design and testing behind it.</p>
       <ul class="chips" aria-label="What the case study covers">
         <li>User research</li>
@@ -187,6 +188,33 @@
     </div>
   </section>
 
+  <!-- Design System -->
+  <hr class="rule" style="margin-top:100px">
+  <section class="wrap block dst" aria-labelledby="dst-title">
+    <p class="dst-kicker">Design System</p>
+    <h2 class="section-title center" id="dst-title">The Design System behind this portfolio</h2>
+    <p class="intro">Colours, typography, spacing and components, documented with the real CSS of this site. Hover, focus and click everything.</p>
+    <ul class="dst-grid">
+      <li class="reveal"><a class="dst-tile" href="design-system.html#colors">
+        <span class="dst-preview dst-colors" aria-hidden="true"><i style="--c:var(--bg);--b:1"></i><i style="--c:var(--surface)"></i><i style="--c:var(--text-strong)"></i><i style="--c:var(--muted)"></i><i style="--c:var(--line)"></i><i style="--c:var(--accent)"></i></span>
+        <span class="dst-name">Colors</span><span class="dst-desc">A restrained dark palette with one accent.</span>
+      </a></li>
+      <li class="reveal"><a class="dst-tile" href="design-system.html#typography">
+        <span class="dst-preview dst-type" aria-hidden="true"><b>Aa</b><small>Montserrat · Roboto</small></span>
+        <span class="dst-name">Typography</span><span class="dst-desc">A type scale for content and for interface.</span>
+      </a></li>
+      <li class="reveal"><a class="dst-tile" href="design-system.html#buttons">
+        <span class="dst-preview dst-buttons" aria-hidden="true"><span class="btn btn-primary btn-sm">Primary</span><span class="btn btn-sm">Default</span></span>
+        <span class="dst-name">Buttons</span><span class="dst-desc">Pills with hover, focus and disabled states.</span>
+      </a></li>
+      <li class="reveal"><a class="dst-tile" href="design-system.html#tags">
+        <span class="dst-preview dst-parts" aria-hidden="true"><span class="dst-tag">Tag</span><span class="dst-tag">Chip</span><span class="dst-switch"></span></span>
+        <span class="dst-name">Components</span><span class="dst-desc">Tags, cards, inputs, tabs and more.</span>
+      </a></li>
+    </ul>
+    <p class="dst-cta"><a class="btn btn-primary" href="design-system.html">Explore the Design System<svg class="arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </section>
+
   <!-- Solutions and Innovations -->
   <hr class="rule" style="margin-top:100px">
   <section class="wrap block">
@@ -195,16 +223,8 @@
     <div class="thumbs labeled">
       <a class="reveal" href="organogram.html"><img src="assets/img/img_18.webp" alt="Organogram: company structure and team management screen"><span>Organogram →</span></a>
       <a class="reveal" href="calendar.html"><img src="assets/img/img_19.webp" alt="Calendar: team absences planning screen"><span>Calendar →</span></a>
-      <a class="reveal" href="variansee.html"><img src="assets/img/img_20.webp" alt="Variansee: browser extension for contrast adjustment"><span>Variansee (High Contrast) →</span></a>
+      <a class="reveal" href="variansee.html"><img src="assets/img/img_20.webp" alt="Variansee: browser extension for contrast adjustment"><span>Variansee →</span></a>
     </div>
-  </section>
-
-  <!-- Style Guide -->
-  <hr class="rule" style="margin-top:137px">
-  <section class="wrap block style-guide">
-    <h2 class="section-title center">Style Guide</h2>
-    <p class="intro">Here you can explore some of the components commonly found in style guides and design systems. The selected elements demonstrate the use of variants, typography, colours, shadows, cards, and more.</p>
-    <div class="cover-row"><a href="style-guide.html"><img src="assets/img/img_21.webp" alt="Style guide components: buttons, selectors, cards and colours"></a><a class="btn" href="style-guide.html">View more<span class="sr-only"> about the Style Guide</span><svg class="arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
   </section>
 
   <!-- Design & Prototypes -->
@@ -259,6 +279,7 @@
         <li><a href="ai-workflows.html">AI Workflows</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="design-system.html">Design System</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-label="Footer: projects">
@@ -268,7 +289,6 @@
         <li><a href="meurh360.html">MeuRH360</a></li>
         <li><a href="ux-analyzer.html">UX Analyzer</a></li>
         <li><a href="flory-page.html">Flory</a></li>
-        <li><a href="style-guide.html">Style Guide</a></li>
       </ul>
     </nav>
     <nav class="footer-col" aria-label="Footer: connect">

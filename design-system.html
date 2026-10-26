@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Felipe Parreiras - Design System</title>
+  <meta name="description" content="The system behind this portfolio: colours, typography, spacing and components, documented with the real CSS and fully interactive.">
+  <meta name="theme-color" content="#292a2f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Felipe Parreiras - Design System">
+  <meta property="og:description" content="The system behind this portfolio: colours, typography, spacing and components, documented with the real CSS and fully interactive.">
+  <link rel="canonical" href="https://felipeparreiras.com/design-system.html">
+  <meta property="og:url" content="https://felipeparreiras.com/design-system.html">
+  <meta property="og:site_name" content="Felipe Parreiras">
+  <meta property="og:image" content="https://felipeparreiras.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Felipe Parreiras, Product Designer">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://felipeparreiras.com/assets/img/og-image.jpg">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/xipptech.css">
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="brand" href="index.html" aria-label="Felipe Parreiras — home"><img src="assets/img/img_00.webp" alt=""><span>Felipe Parreiras</span></a>
+  <button class="menu-btn" aria-label="Menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg></button>
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="index.html">Portfolio</a></li>
+      <li><a href="ai-workflows.html">AI Workflows</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="about.html#experience">Resume</a>
+    <button class="search-btn" aria-label="Search"><svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></button>
+  </nav>
+</header>
+
+<div class="search-panel" role="dialog" aria-label="Search">
+  <div class="search-box">
+    <input type="search" placeholder="Search this site" aria-label="Search this site">
+    <ul class="search-results"></ul>
+  </div>
+</div>
+
+<div class="ds">
+
+  <!-- ===== Side navigation (filled by design-system.js) ===== -->
+  <nav class="ds-nav" aria-label="Design System sections">
+    <button class="ds-nav-toggle" type="button" aria-expanded="false" aria-controls="ds-nav-body"><span>Contents</span><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 9l6 6 6-6"/></svg></button>
+    <div class="ds-nav-body" id="ds-nav-body">
+      <div class="ds-filter">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+        <input type="search" placeholder="Filter sections" aria-label="Filter sections" autocomplete="off">
+      </div>
+      <div id="ds-nav-groups"></div>
+      <p class="ds-nav-empty" role="status">No section matches.</p>
+    </div>
+  </nav>
+
+  <main class="ds-main" id="main">
+
+    <a class="btn btn-back" href="index.html" style="margin-bottom:28px"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a>
+
+    <!-- ===== Overview ===== -->
+    <section class="ds-hero ds-sec" id="overview" data-group="Start" data-title="Overview" data-keys="intro principles about" style="padding-top:0;scroll-margin-top:90px">
+      <p class="ds-eyebrow">Design System</p>
+      <h1>The system behind this portfolio</h1>
+      <p class="ds-lead">Tokens and components used across the site, documented with the real CSS. Everything on this page is live: hover, focus and click it. Click any colour, type style, icon or scale step for details and copy-ready code.</p>
+      <ul class="ds-meta" aria-label="At a glance">
+        <li>Dark theme</li>
+        <li>Montserrat and Roboto</li>
+        <li>Static HTML, CSS and a little JavaScript</li>
+        <li><span id="ds-count">0</span> documented tokens</li>
+      </ul>
+      <div class="ds-principles">
+        <article class="xt-card"><h3>Dark first</h3><p>One calm dark surface, with panels slightly lighter than the page.</p></article>
+        <article class="xt-card"><h3>Accent with intent</h3><p>The green is the portfolio’s signature, used for actions, labels and focus.</p></article>
+        <article class="xt-card"><h3>Pills act, squares label</h3><p>Round shapes are buttons and links. Square shapes are tags.</p></article>
+        <article class="xt-card"><h3>Quiet motion</h3><p>Short, small movements that confirm an action.</p></article>
+      </div>
+    </section>
+
+    <!-- ===== Foundations: Colors ===== -->
+    <section class="ds-sec" id="colors" data-group="Foundations" data-title="Colors" data-keys="palette hex accent surface contrast">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Colors</h2>
+        <p>A restrained palette: three surfaces, three text tones, one line colour and a single accent. Click a swatch to copy the value and see its contrast.</p>
+      </header>
+      <div id="ds-swatches"></div>
+      <p class="ds-note"><strong>Contrast:</strong> text colours pass WCAG AAA on the page background. The line colour is about 1.9:1, so it works for dividers but should never be the only thing that marks a control. Control borders are quiet on purpose and the label carries the meaning.</p>
+    </section>
+
+    <!-- ===== Typography ===== -->
+    <section class="ds-sec" id="typography" data-group="Foundations" data-title="Typography" data-keys="fonts montserrat roboto type scale headings">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Typography</h2>
+        <p>Montserrat carries all content. Roboto is reserved for interface chrome such as the header. Click a style to see its specification.</p>
+      </header>
+      <div class="ds-fonts">
+        <div class="ds-font"><div class="ds-font-aa" style="font-family:var(--font)">Aa</div><h3>Montserrat</h3><p>Headings, body text, buttons and labels.</p><div class="ds-weights"><span style="font-weight:400">400</span><span style="font-weight:500">500</span><span style="font-weight:600">600</span><span style="font-weight:700">700</span></div></div>
+        <div class="ds-font"><div class="ds-font-aa" style="font-family:var(--font-ui)">Aa</div><h3>Roboto</h3><p>Header, navigation and the search overlay.</p><div class="ds-weights"><span style="font-family:var(--font-ui);font-weight:400">400</span><span style="font-family:var(--font-ui);font-weight:500">500</span><span style="font-family:var(--font-ui);font-weight:700">700</span></div></div>
+      </div>
+      <h3 class="ds-sub">Type scale</h3>
+      <div class="ds-tester"><input id="ds-tester" type="text" value="Real products, not just studies." aria-label="Type your own sample text" maxlength="80"></div>
+      <div class="ds-type" id="ds-type"></div>
+    </section>
+
+    <!-- ===== Spacing ===== -->
+    <section class="ds-sec" id="spacing" data-group="Foundations" data-title="Spacing" data-keys="space gap padding margin rhythm">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Spacing</h2>
+        <p>One scale for gaps, padding and rhythm. Click a step to copy its variable.</p>
+      </header>
+      <div class="ds-scale" id="ds-spacing"></div>
+      <p class="ds-note"><strong>Rhythm:</strong> sections are separated by <code>--space-24</code> (96px) and a hairline divider; cards and panels sit <code>--space-5</code> (20px) apart.</p>
+    </section>
+
+    <!-- ===== Radius ===== -->
+    <section class="ds-sec" id="radius" data-group="Foundations" data-title="Radius" data-keys="corner rounded pill shape">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Radius</h2>
+        <p>Shape carries meaning: the pill is for anything you press, small squares are for labels, larger radii are for surfaces.</p>
+      </header>
+      <div class="ds-tiles" id="ds-radius"></div>
+    </section>
+
+    <!-- ===== Borders & focus ===== -->
+    <section class="ds-sec" id="borders" data-group="Foundations" data-title="Borders and focus" data-keys="line divider outline focus ring keyboard">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Borders and focus</h2>
+        <p>Hairlines separate sections, quiet outlines mark controls, and a clear ring shows where the keyboard is.</p>
+      </header>
+      <div class="ds-demo">
+        <div class="ds-demo-head"><span class="ds-demo-title">Lines and outlines</span></div>
+        <div class="ds-stage is-col" style="gap:22px">
+          <div class="ds-row" style="align-items:center;gap:20px"><div style="flex:1;min-width:160px;border-top:1px solid var(--line)"></div><code>1px solid var(--line)</code></div>
+          <div class="ds-row" style="gap:20px"><span class="btn"><span>Control border</span></span><code>1px solid var(--line-strong)</code></div>
+          <div class="ds-row" style="gap:20px"><span class="btn" style="--btn-border:var(--accent);--btn-border-hover:var(--accent)"><span>Accent outline</span></span><code>1px solid var(--accent)</code></div>
+        </div>
+      </div>
+      <div class="ds-demo">
+        <div class="ds-demo-head"><span class="ds-demo-title">Focus ring: press Tab to move here</span></div>
+        <div class="ds-stage"><a class="btn btn-primary" href="#borders">Focusable link</a><button class="btn" type="button">Focusable button</button><code>2px solid var(--focus), offset 3px</code></div>
+      </div>
+    </section>
+
+    <!-- ===== Elevation ===== -->
+    <section class="ds-sec" id="elevation" data-group="Foundations" data-title="Elevation" data-keys="shadow depth glow lift">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Elevation</h2>
+        <p>Surfaces are flat by default. Depth appears on interaction and around devices. Hover the tiles to see it.</p>
+      </header>
+      <div class="ds-tiles ds-shadow-grid" id="ds-shadows"></div>
+    </section>
+
+    <!-- ===== Motion ===== -->
+    <section class="ds-sec" id="motion" data-group="Foundations" data-title="Motion" data-keys="animation transition hover reveal duration easing">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Motion</h2>
+        <p>Three durations, one easing. Movement is small and always optional: with “reduce motion” on, everything resolves instantly.</p>
+      </header>
+      <div class="ds-motion">
+        <article class="ds-motion-card">
+          <h3>Lift</h3>
+          <div class="ds-motion-stage"><div class="ds-lift" tabindex="0" aria-label="Hover or focus to see the lift"></div></div>
+          <p>Cards and tiles rise 3–4px with a soft shadow. <code>--dur-base</code> (250ms).</p>
+        </article>
+        <article class="ds-motion-card">
+          <h3>Arrow nudge</h3>
+          <div class="ds-motion-stage"><a class="btn btn-sm" href="#motion">Hover me<svg class="arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <p>Icons move 2–3px in their own direction. <code>--dur-fast</code> (200ms).</p>
+        </article>
+        <article class="ds-motion-card">
+          <h3>Reveal</h3>
+          <div class="ds-motion-stage"><div class="ds-rise is-playing" id="ds-rise"></div></div>
+          <p>Content rises 18px while fading in as it enters. <code>--dur-reveal</code> (550ms).</p>
+          <button class="ds-tool" type="button" id="ds-replay"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12a8 8 0 1 0 3-6.2M4 4v5h5"/></svg>Replay</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Layout ===== -->
+    <section class="ds-sec" id="layout" data-group="Foundations" data-title="Layout" data-keys="grid width breakpoints responsive container">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Layout</h2>
+        <p>Content sits in a centred column up to 1154px, with generous gutters that tighten on small screens. Resize the window to watch the breakpoint change.</p>
+      </header>
+      <div class="ds-width"><div class="ds-width-bar">max 1154px · gutters 62px each side (16px on mobile)</div></div>
+      <div class="ds-bp" id="ds-bp">
+        <div data-min="961"><b>Wide</b><span>above 960px</span></div>
+        <div data-min="861" data-max="960"><b>Large</b><span>861–960px</span></div>
+        <div data-min="701" data-max="860"><b>Medium</b><span>701–860px</span></div>
+        <div data-max="700"><b>Small</b><span>700px and below</span></div>
+      </div>
+      <p class="ds-live">Current width: <strong id="ds-width">–</strong></p>
+      <ul class="ds-guide">
+        <li>Three-column card grids collapse to one column below 960px.</li>
+        <li>Two-column pairs (text and image) stack below 960px, image first.</li>
+        <li>Buttons grow from 44px to 46px tall on small screens for easier tapping.</li>
+        <li class="dont">Avoid horizontal scrolling: every component must fit a 375px screen.</li>
+      </ul>
+    </section>
+
+    <!-- ===== Icons ===== -->
+    <section class="ds-sec" id="icons" data-group="Foundations" data-title="Icons" data-keys="svg arrow check search menu glyph">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Foundations</p>
+        <h2>Icons</h2>
+        <p>Inline SVG on a 24px grid. Interface arrows are 2px strokes that inherit the text colour; glyphs inside cards are filled. Click an icon to copy its markup.</p>
+      </header>
+      <div class="ds-icons" id="ds-icons"></div>
+    </section>
+
+    <!-- ===== Components: Buttons ===== -->
+    <section class="ds-sec" id="buttons" data-group="Components" data-title="Buttons" data-keys="button primary secondary back pill states hover focus disabled">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Components</p>
+        <h2>Buttons</h2>
+        <p>Pills, 44px tall. Primary is filled with the accent, the default is a translucent outline, and Back is a quiet ghost. Use the selector to preview each state, or just hover and tab through them.</p>
+      </header>
+
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head">
+          <span class="ds-demo-title">Variants</span>
+          <div class="ds-demo-tools">
+            <span class="ds-state-label" id="ds-state-label">State</span>
+            <div class="ds-seg" role="group" aria-labelledby="ds-state-label" id="ds-states">
+              <button type="button" aria-pressed="true" data-state="default">Default</button>
+              <button type="button" aria-pressed="false" data-state="hover">Hover</button>
+              <button type="button" aria-pressed="false" data-state="focus">Focus</button>
+              <button type="button" aria-pressed="false" data-state="active">Active</button>
+              <button type="button" aria-pressed="false" data-state="disabled">Disabled</button>
+            </div>
+          </div>
+        </div>
+        <div class="ds-stage is-grid" id="ds-btn-stage" data-state="default" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+          <div class="ds-cell"><small>Primary</small><a class="ds-live-code btn btn-primary" href="#buttons">Try it now<svg class="arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+          <div class="ds-cell"><small>Default</small><a class="ds-live-code btn" href="#buttons">View more<svg class="arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+          <div class="ds-cell"><small>Back</small><a class="ds-live-code btn btn-back" href="#buttons"><svg class="arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Back</a></div>
+          <div class="ds-cell"><small>Small</small><a class="ds-live-code btn btn-sm btn-primary" href="#buttons">Download<svg class="download" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg></a></div>
+        </div>
+        <pre class="ds-code" aria-label="Button markup"></pre>
+      </div>
+      <ul class="ds-guide">
+        <li>Primary once per view, for the single most important action.</li>
+        <li>Buttons that leave the site use the arrow-northeast icon and open in a new tab.</li>
+        <li>The Back button is identical on every page. Do not restyle it per page.</li>
+        <li class="dont">Do not use a square shape for an action: square is for labels.</li>
+      </ul>
+    </section>
+
+    <!-- ===== Tags and chips ===== -->
+    <section class="ds-sec" id="tags" data-group="Components" data-title="Tags and chips" data-keys="tag chip label badge filter pill status">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Components</p>
+        <h2>Tags and chips</h2>
+        <p>Squared tags describe. Pills and selectable chips act. Try the filter chips: they toggle on click and with the keyboard.</p>
+      </header>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Descriptive tags (not interactive)</span></div>
+        <div class="ds-stage ds-live-code">
+          <span class="xt-tag">Claude Code</span><span class="xt-tag">Figma MCP</span>
+          <ul class="chips" style="margin:0"><li>User research</li><li>Personas</li><li>Journey maps</li></ul>
+        </div>
+        <pre class="ds-code" aria-label="Tag markup"></pre>
+      </div>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Jump links (navigation, pill)</span></div>
+        <div class="ds-stage ds-live-code"><ul class="xt-jump" style="margin:0"><li><a href="#tags">Overview</a></li><li><a href="#tags">Research</a></li><li><a href="#tags">Design</a></li></ul></div>
+        <pre class="ds-code" aria-label="Jump link markup"></pre>
+      </div>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Filter chips (new)</span><span class="ds-help" id="ds-chip-out" role="status">Selected: Research</span></div>
+        <div class="ds-stage ds-live-code" id="ds-chips">
+          <button class="ds-chip" type="button" aria-pressed="true">Research</button>
+          <button class="ds-chip" type="button" aria-pressed="false">Wireframes</button>
+          <button class="ds-chip" type="button" aria-pressed="false">Mockups</button>
+          <button class="ds-chip" type="button" aria-pressed="false">Testing</button>
+        </div>
+        <pre class="ds-code" aria-label="Filter chip markup"></pre>
+      </div>
+      <p class="ds-note"><strong>Known inconsistency:</strong> the orange “New!” status on the home page is a bordered pill, while every other tag is squared. It is kept as is until the home page is revisited.</p>
+    </section>
+
+    <!-- ===== Cards ===== -->
+    <section class="ds-sec" id="cards" data-group="Components" data-title="Cards" data-keys="card tile icon numbered stat hover">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Components</p>
+        <h2>Cards</h2>
+        <p>Cards group short pieces of content on the lighter surface. They lift and gain an accent outline on hover.</p>
+      </header>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Info card</span></div>
+        <div class="ds-stage is-grid ds-live-code" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+          <article class="xt-card"><span class="xt-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19a7 7 0 0 0-4 12.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26A7 7 0 0 0 12 2z"/></svg></span><h3>Practical solutions</h3><p>A short sentence that explains the idea in plain words.</p></article>
+          <article class="xt-card"><p class="xt-mini">Impact</p><p>A card can also start with a small label instead of an icon.</p></article>
+        </div>
+        <pre class="ds-code" aria-label="Card markup"></pre>
+      </div>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Numbered cards and stats</span></div>
+        <div class="ds-stage is-col ds-live-code">
+          <ol class="xt-pains xt-pains-3"><li><span>1</span><h4>Simple navigation</h4><p>Short supporting text under a clear title.</p></li><li><span>2</span><h4>Product availability</h4><p>Numbers use the accent tint for a calm emphasis.</p></li><li><span>3</span><h4>Easy access</h4><p>Keep titles to one or two lines.</p></li></ol>
+          <div class="xt-stats"><ul><li><strong>125%</strong><span>increase in the number of workflows developed</span></li><li><strong>100%</strong><span>increase in research studies conducted</span></li></ul></div>
+        </div>
+        <pre class="ds-code" aria-label="Numbered card markup"></pre>
+      </div>
+    </section>
+
+    <!-- ===== Navigation ===== -->
+    <section class="ds-sec" id="navigation" data-group="Components" data-title="Navigation" data-keys="header nav menu case project previous next back links">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Components</p>
+        <h2>Navigation</h2>
+        <p>A fixed header, a Back button at the top of every inner page, and previous/next links at the end of each project.</p>
+      </header>
+      <div class="ds-demo">
+        <div class="ds-demo-head"><span class="ds-demo-title">Header (shown static here)</span></div>
+        <div class="ds-stage is-plain" style="padding:20px"><div class="ds-frame" id="ds-header-frame"></div></div>
+      </div>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Project navigation</span></div>
+        <div class="ds-stage is-plain ds-live-code" style="padding:20px"><div class="ds-frame"><nav class="case-nav" aria-label="Example project navigation"><a class="prev" href="#navigation"><small>Previous project</small><span>← MeuRH360</span></a><a class="next" href="#navigation"><small>Next project</small><span>UX Analyzer →</span></a></nav></div></div>
+        <pre class="ds-code" aria-label="Project navigation markup"></pre>
+      </div>
+    </section>
+
+    <!-- ===== Inputs and controls ===== -->
+    <section class="ds-sec" id="inputs" data-group="Components" data-title="Inputs and controls" data-keys="input field text toggle switch tabs form validation">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Components</p>
+        <h2>Inputs and controls</h2>
+        <p>The site has almost no forms, so these are defined here first: they share the pill shape, the accent focus and the quiet border of the buttons.</p>
+      </header>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Text field</span></div>
+        <div class="ds-stage is-grid ds-live-code" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+          <div class="ds-field"><label for="ds-f1">Default</label><input class="ds-input" id="ds-f1" type="text" placeholder="Your name"><span class="ds-help">Hover and focus me.</span></div>
+          <div class="ds-field"><label for="ds-f2">Error</label><input class="ds-input" id="ds-f2" type="email" value="name@" aria-invalid="true" aria-describedby="ds-f2h"><span class="ds-help is-error" id="ds-f2h">Enter a valid e-mail address.</span></div>
+          <div class="ds-field"><label for="ds-f3">Disabled</label><input class="ds-input" id="ds-f3" type="text" value="Not available" disabled></div>
+        </div>
+        <pre class="ds-code" aria-label="Text field markup"></pre>
+      </div>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Toggle</span></div>
+        <div class="ds-stage ds-live-code">
+          <label class="ds-toggle"><input type="checkbox" checked><span class="ds-toggle-track"></span>Reduce motion</label>
+          <label class="ds-toggle"><input type="checkbox"><span class="ds-toggle-track"></span>High contrast</label>
+          <label class="ds-toggle is-disabled"><input type="checkbox" disabled><span class="ds-toggle-track"></span>Disabled</label>
+        </div>
+        <pre class="ds-code" aria-label="Toggle markup"></pre>
+      </div>
+      <div class="ds-demo">
+        <div class="ds-demo-head"><span class="ds-demo-title">Tabs (arrow keys move between tabs)</span></div>
+        <div class="ds-stage is-col">
+          <div class="ds-tabs" role="tablist" aria-label="Example tabs" id="ds-tabs">
+            <button class="ds-tab" role="tab" id="t1" aria-selected="true" aria-controls="p1" type="button">Overview</button>
+            <button class="ds-tab" role="tab" id="t2" aria-selected="false" aria-controls="p2" type="button" tabindex="-1">Usage</button>
+            <button class="ds-tab" role="tab" id="t3" aria-selected="false" aria-controls="p3" type="button" tabindex="-1">Accessibility</button>
+          </div>
+          <div class="ds-tabpanel" role="tabpanel" id="p1" aria-labelledby="t1">Tabs switch between views of the same content without leaving the page.</div>
+          <div class="ds-tabpanel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>Use two to four tabs with short labels. The selected tab is underlined with the accent.</div>
+          <div class="ds-tabpanel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>Arrow keys, Home and End move between tabs. Only the selected tab is in the tab order.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Feedback ===== -->
+    <section class="ds-sec" id="feedback" data-group="Components" data-title="Feedback" data-keys="toast tooltip copy message status">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Components</p>
+        <h2>Feedback</h2>
+        <p>Short, light confirmations. A toast appears at the bottom of the screen for a couple of seconds; a tooltip names an icon on hover or focus.</p>
+      </header>
+      <div class="ds-demo">
+        <div class="ds-demo-head"><span class="ds-demo-title">Tooltip and toast</span></div>
+        <div class="ds-stage">
+          <span class="ds-tip"><button class="ds-tool" type="button" aria-describedby="ds-tip1"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h9"/></svg>Hover or focus</button><span class="ds-tip-bubble" role="tooltip" id="ds-tip1">Copy to clipboard</span></span>
+          <button class="btn btn-sm" type="button" id="ds-toast-btn">Show toast</button>
+          <span class="ds-toast-demo"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Copied to the clipboard</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Lists and data ===== -->
+    <section class="ds-sec" id="lists" data-group="Components" data-title="Lists and data" data-keys="facts list checklist numbered definition">
+      <header class="ds-sec-head">
+        <p class="ds-kicker">Components</p>
+        <h2>Lists and data</h2>
+        <p>Compact ways to present facts, steps and benefits.</p>
+      </header>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Facts strip</span></div>
+        <div class="ds-stage is-col ds-live-code"><dl class="xt-facts" style="margin:0"><div><dt>Duration</dt><dd>3 weeks</dd></div><div><dt>My role</dt><dd>UX and UI designer</dd></div><div><dt>Focus</dt><dd>Research and prototyping</dd></div><div><dt>Audience</dt><dd>Shoppers and enthusiasts</dd></div></dl></div>
+        <pre class="ds-code" aria-label="Facts strip markup"></pre>
+      </div>
+      <div class="ds-demo" data-code>
+        <div class="ds-demo-head"><span class="ds-demo-title">Checklist and numbered list</span></div>
+        <div class="ds-stage is-grid ds-live-code" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+          <ul class="xt-points"><li>24/7 online care</li><li>Discounts on appointments</li><li>A digital health card</li></ul>
+          <ol class="xt-numlist"><li>Some users want to share pictures</li><li>A chat to talk directly</li></ol>
+        </div>
+        <pre class="ds-code" aria-label="List markup"></pre>
+      </div>
+    </section>
+
+    <nav class="case-nav" aria-label="Project navigation">
+      <a class="prev" href="flory-page.html"><small>Previous project</small><span>← Flory</span></a>
+      <a class="next" href="organogram.html"><small>Next project</small><span>Organogram →</span></a>
+    </nav>
+
+    <div class="ds-end"></div>
+  </main>
+</div>
+
+<!-- Detail drawer -->
+<aside class="ds-drawer" id="ds-drawer" aria-label="Details" role="complementary">
+  <button class="ds-drawer-close" type="button" aria-label="Close details"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <div id="ds-drawer-body"></div>
+</aside>
+<div class="ds-toast" id="ds-toast" role="status" aria-live="polite"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span id="ds-toast-text">Copied</span></div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="footer-name" href="index.html">Felipe Parreiras</a>
+      <p>Product Designer · UX/UI · digital products B2B and B2C · AI workflows</p>
+      <a class="footer-mail" href="mailto:fgparreiras@gmail.com">fgparreiras@gmail.com</a>
+    </div>
+    <nav class="footer-col" aria-label="Footer: site">
+      <p class="footer-title">Site</p>
+      <ul>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="ai-workflows.html">AI Workflows</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="design-system.html">Design System</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Footer: projects">
+      <p class="footer-title">Projects</p>
+      <ul>
+        <li><a href="xipptech.html">XippTech</a></li>
+        <li><a href="meurh360.html">MeuRH360</a></li>
+        <li><a href="design-system.html">UX Analyzer</a></li>
+        <li><a href="flory-page.html">Flory</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Footer: connect">
+      <p class="footer-title">Connect</p>
+      <ul>
+        <li><a href="mailto:fgparreiras@gmail.com">E-mail</a></li>
+        <li><a class="ext" href="https://www.linkedin.com/in/felipe-parreiras-ux/" target="_blank" rel="noopener">LinkedIn<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 17L17 7M8 7h9v9"/></svg></a></li>
+        <li><a href="about.html#experience">Resume</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Felipe Parreiras</span>
+    <a class="to-top" href="#main">Back to top<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 19V5M6 11l6-6 6 6"/></svg></a>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/design-system.js"></script>
+</body>
+</html>

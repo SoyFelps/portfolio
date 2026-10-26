@@ -1,0 +1,64 @@
+/* Design tokens: the named scale behind the portfolio.
+   Colours, fonts and layout width already live in :root of style.css (--bg, --accent, --muted, ...).
+   This file adds the scales that used to be written as literal values, with the exact values in use today.
+   Loaded by the Design System page; existing pages still use their literals until they are migrated. */
+
+:root {
+  /* Colour: derived values */
+  --accent-hover: #b4ff8f;            /* primary button hover */
+  --text-on-accent: #14160f;          /* text on the accent colour */
+  --tint-chip: rgba(255, 255, 255, .07);   /* chips, tags, subtle fills */
+  --tint-hover: rgba(255, 255, 255, .13);  /* hover fill on dark surfaces */
+  --tint-accent: rgba(145, 255, 94, .16);  /* accent badges, check icons */
+  --glow-accent: rgba(145, 255, 94, .14);  /* soft glow behind devices */
+  --line-strong: rgba(255, 255, 255, .24); /* button and control borders */
+
+  /* Spacing (px) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-14: 56px;
+  --space-18: 72px;
+  --space-24: 96px;
+  --space-26: 104px;
+
+  /* Radius */
+  --radius-sm: 6px;     /* tags, chips */
+  --radius-md: 12px;    /* inset notes, small tiles */
+  --radius-lg: 16px;    /* cards */
+  --radius-xl: 20px;    /* panels */
+  --radius-2xl: 28px;   /* device panels */
+  --radius-pill: 999px; /* buttons, jump links */
+
+  /* Elevation */
+  --shadow-lift: 0 14px 26px rgba(0, 0, 0, .3);              /* hovered tiles */
+  --shadow-accent: 0 10px 26px -8px rgba(145, 255, 94, .55); /* hovered primary button */
+  --shadow-device: drop-shadow(0 24px 30px rgba(0, 0, 0, .4)); /* devices on panels (filter) */
+
+  /* Motion */
+  --dur-fast: .2s;     /* buttons, links */
+  --dur-base: .25s;    /* cards, tiles */
+  --dur-reveal: .55s;  /* scroll reveal */
+  --ease: ease;
+
+  /* Type scale */
+  --fs-display: clamp(48px, 6.2vw, 84px);
+  --fs-title: clamp(30px, 3.6vw, 44px);
+  --fs-heading: clamp(28px, 3vw, 38px);
+  --fs-subhead: clamp(22px, 2.4vw, 28px);
+  --fs-card: 21px;
+  --fs-lead: 19px;
+  --fs-body: 17px;
+  --fs-small: 15px;
+  --fs-caption: 13px;
+
+  /* Breakpoints (documentation only: custom properties cannot be used in media queries) */
+  --bp-lg: 960px;
+  --bp-md: 860px;
+  --bp-sm: 700px;
+}
